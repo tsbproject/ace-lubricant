@@ -496,6 +496,11 @@ body {
 .form__group:not(:last-child) {
   margin-bottom: 2rem;
 }
+@media (max-width: 575.98px) {
+  .form__group:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
 .form__textarea {
   font-size: 1.5rem;
   font-family: inherit;
@@ -508,6 +513,21 @@ body {
   width: 80%;
   display: block;
   transition: all 3s;
+}
+@media (max-width: 575.98px) {
+  .form__textarea {
+    font-size: 0.7rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 0.7rem 1rem;
+    border-radius: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 40%;
+    display: block;
+    transition: all 3s;
+  }
 }
 .form__textarea:focus {
   outline: none;
@@ -538,6 +558,16 @@ body {
   margin-top: 0.7rem;
   display: block;
   transition: all 3s;
+}
+@media (max-width: 575.98px) {
+  .form__label {
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+    display: block;
+    transition: all 3s;
+  }
 }
 .form__textarea:placeholder-shown + .form__label {
   opacity: 0;
@@ -905,9 +935,20 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   height: 75rem;
 }
+@media (max-width: 575.98px) {
+  .book {
+    height: 33rem;
+  }
+}
 .book__form {
   width: 50%;
   padding: 6rem;
+}
+@media (max-width: 575.98px) {
+  .book__form {
+    width: 25%;
+    padding: 3rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -104,9 +104,19 @@
 
     height: 75rem;
 
+    @include media-breakpoint-down(sm) {
+        height: 33rem;
+     }
+
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include media-breakpoint-down(sm) {
+            width: 25%;
+            padding: 3rem;
+    
+         }
     }
 }
 
