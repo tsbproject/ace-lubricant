@@ -12,13 +12,14 @@
     margin-bottom: 10rem;
 
     @include media-breakpoint-down(sm) {
+        width: 100%;
+        margin: 0 auto;
         box-shadow: 0 3rem 6rem rgba($color-primary-black, .1);
         background-color: rgba($color-primary-deep, .6);
-        width: -100h;
         padding: 6rem;
-        padding-left: 59rem;
+        padding-left: 2rem;
         font-size: $default-font-size;
-        transform: skewX(-5deg);
+        transform: skewX(0deg);
         margin-bottom: 10rem;
     }
 
@@ -50,8 +51,22 @@
         shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%) ;
-        transform: translateX(-2rem) skewX(12deg);
+        transform: translateX(-2rem) skewX(-12deg);
         position: relative;
+
+        @include media-breakpoint-down(sm) {
+            width: 10rem;
+            height: 10rem;
+            background-color: orangered;
+            float: left;
+            -webkit-shape-outside:circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%) ;
+            transform: translateX(-2rem) skewX(0deg);
+            position: relative;
+        }
+       
         
     }
 
@@ -67,7 +82,7 @@
 
 
     &__text {
-        transform: skewX(12deg);
+        transform: skewX(4deg);
     }
 
 
