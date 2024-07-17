@@ -327,6 +327,9 @@ body {
   margin-bottom: 28rem;
 }
 
+.carousel {
+  height: 131.75vh;
+}
 .carousel__img {
   height: 131.75vh;
   width: 100%;
@@ -336,7 +339,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .carousel__img {
-    height: 131.75vh;
+    height: 121.75vh;
     width: 100%;
     filter: brightness(50%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 110vh, 0 100%);
@@ -354,6 +357,8 @@ body {
 @media (max-width: 575.98px) {
   .carousel-caption__header {
     font-size: 4rem;
+    position: absolute;
+    top: -50rem;
   }
 }
 .carousel-caption__description {
@@ -361,6 +366,13 @@ body {
   font-size: 3rem;
   position: relative;
   bottom: 42rem;
+}
+@media (max-width: 575.98px) {
+  .carousel-caption__description {
+    font-size: 1.7rem;
+    position: relative;
+    bottom: 42rem;
+  }
 }
 .carousel-caption__btn {
   position: relative;

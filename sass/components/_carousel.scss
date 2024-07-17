@@ -11,6 +11,9 @@ margin-bottom: 28rem;
 
 
 .carousel {
+
+  height: 131.75vh;
+
     
     &__img {
       height: 131.75vh;
@@ -26,7 +29,9 @@ margin-bottom: 28rem;
    
       @include media-breakpoint-down(sm) {
 
-        height: 131.75vh;
+        height: 121.75vh;
+     
+     
       width:100%;
       filter: brightness(50%);
        
@@ -65,6 +70,10 @@ margin-bottom: 28rem;
     @include media-breakpoint-down(sm) {
       font-size: $heading-secondary-font;
 
+      position: absolute;
+      top: -50rem;
+      // margin-bottom: -50rem;
+
     }
    }
 
@@ -73,7 +82,16 @@ margin-bottom: 28rem;
     font-family: "Lora" serif ;
     font-size: 3rem;
     position: relative;
-    bottom: 42rem;
+    bottom:42rem;
+
+    @include media-breakpoint-down(sm) {
+      font-size: $default-font-size;
+      position: relative;
+      bottom:42rem;
+
+      // margin-bottom: -50rem;
+
+    }
 
 }
 
