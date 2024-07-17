@@ -1,0 +1,212 @@
+
+
+
+
+body {
+    font-family: "Lora" serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-primary-black;
+ 
+    //padding: 1.5rem;
+}
+
+.heading-primary {
+    color: $color-secondary-white;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+
+    // @include media-breakpoint-down(sm) {
+    //     font-size: 10px;
+       
+    //   }
+
+
+    &--main {
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+    
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        
+    // @include respond(phone) {
+    //     letter-spacing: 1rem;
+    //     font-family: 5rem;
+    
+        
+    // }
+    
+        /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.75rem;
+        animation: moveInRight 1s ease-out;
+
+        // @include respond(phone) {
+        //     letter-spacing: .5rem;
+        
+            
+        // }
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary, $color-primary-deep);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+    // @include respond(tab-port) { //tab-port come first then phone
+    //     font-size:3rem;
+    // }
+
+    // @include respond(phone) {
+    //     font-size:2.5rem;
+    // }
+        
+    
+
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-primary-black, .2);
+    }
+}
+
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
+.section-about {
+
+    &__heading {
+        font-size: $heading-secondary-font;
+        font-weight: 600;
+        font-style: normal;
+        text-transform: uppercase;
+        color: $color-primary;
+        margin-left: 2rem;
+
+        @include media-breakpoint-down(sm) {
+        font-size:$heading-tertiary-font;
+        font-weight: 600;
+        font-style: normal;
+        text-transform: uppercase;
+        color: $color-primary;
+        margin-left: 2rem;
+  
+        }
+
+    }
+
+
+    &__paragraph {
+        font-size:$default-font-size;
+        color: $color-primary-black;
+    }
+
+    &__heading-tertiary {
+        font-size: $heading-tertiary-font;
+        color: $color-primary;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &__portfolio {
+        font-size: $default-font-size2;
+    }
+}
+
+
+
+
+    
+        
+    
+    
+    
+    .carousel-caption {
+    
+      &__header {
+        font-family: "Oxygen" sans-serif;
+        font-size: 10rem;
+        position: relative;
+        bottom: 42rem;
+        color: $color-primary-light;
+
+        animation: moveInLeft 2s ease-out;
+    
+        
+    
+       }
+    
+    
+      &__description {
+        font-family: "Lora" serif ;
+        font-size: 3rem;
+        position: relative;
+        bottom: 42rem;
+
+        animation: moveInRight 5s ease-out;
+    
+        
+    
+      }
+    
+    
+    
+    
+    
+    }
+
+
+    .carousel-indicators {
+        margin-bottom: 28rem;
+        }
+        
+    
+    
+    .carousel-item {
+    
+      &__testimonial {
+        font-size: $default-font-size;
+      }
+    
+      &__header {
+        color: $color-primary;
+      }
+      
+    }

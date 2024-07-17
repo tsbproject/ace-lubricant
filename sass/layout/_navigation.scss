@@ -1,0 +1,120 @@
+.nav {
+
+
+
+  &__navbar-nav {
+    list-style: none;
+    display: inline-flex;
+
+
+    @include media-breakpoint-down(sm){
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    @include media-breakpoint-down(md){
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      
+}
+
+
+   
+  
+  }
+  
+  &__item {
+    font-stretch: normal;
+    font-family: "oxygen" sans-serif;
+ 
+  
+  
+   }
+  
+  
+   &__link {
+     font-size: 2rem;
+     color: $color-primary;
+     position: relative;
+     left: 25rem;
+     margin-right: 3rem;
+     text-decoration: none;
+
+     @include media-breakpoint-down(sm){
+      position:relative;
+      left: 3rem;
+
+     
+    }
+
+
+    @include media-breakpoint-down(md){
+      
+      
+      
+     }
+   
+  
+   }
+  
+  
+  
+  
+  
+  
+  
+  
+  }
+
+
+
+  
+  .navbar-toggler {
+    padding: 0;
+    border: none;
+    box-shadow: none !important;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    }
+    
+    
+    .offcanvas {
+    height: 100rem;
+    
+    
+  }
+    
+
+.dropdown-menu {
+  font-size: $default-font-size2;
+  color: $color-primary-light;
+  background-color: $color-primary-deep;
+  height: 30rem;
+  width: 30rem;
+  margin-left: 15rem;
+
+}
+
+.about-dropdowm {
+  font-size: $default-font-size2;
+  color: $color-primary-light;
+  background-color: $color-primary-deep;
+  height: 15rem;
+  width: 30rem;
+  margin-left: 15rem;
+
+}
+
+
+
+.dropdown-item {
+  color: $color-primary-light
+}
+
+
+

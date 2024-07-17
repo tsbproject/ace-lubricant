@@ -1,0 +1,24 @@
+.header {
+  height: $header-height-small;
+  background-color:$color-primary-light;
+
+
+  &__logo {
+    width: $logo-width ;
+    height: $logo-height;
+    margin-left: 4rem;
+    margin-top: 3rem;
+
+    @include media-breakpoint-down(sm) {
+      width: $logo-width-small ;
+      height: $logo-height-small;
+      margin-left: 3rem;
+      margin-top: 3rem;
+
+
+    }
+
+   
+  }
+
+}

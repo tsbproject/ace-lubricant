@@ -1,0 +1,108 @@
+
+.carousel-indicators {
+margin-bottom: 28rem;
+}
+
+
+
+
+
+
+
+
+.carousel {
+    
+    &__img {
+      height: 131.75vh;
+      width:100%;
+      filter: brightness(50%);
+     
+ 
+ 
+ 
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+
+   
+      @include media-breakpoint-down(sm) {
+
+        height: 131.75vh;
+      width:100%;
+      filter: brightness(50%);
+       
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 110vh, 0 100%);
+         clip-path: polygon(0 0, 100% 0, 100% 110vh, 0 100%);
+
+        
+  
+      }
+
+
+    }
+
+    
+
+    
+
+
+    
+    
+  }
+
+    
+
+
+
+.carousel-caption {
+
+  &__header {
+    font-family: "Oxygen" sans-serif;
+    font-size: $heading-primary-font-main;
+    position: relative;
+    bottom: 42rem;
+    color: $color-primary-light;
+
+    @include media-breakpoint-down(sm) {
+      font-size: $heading-secondary-font;
+
+    }
+   }
+
+
+  &__description {
+    font-family: "Lora" serif ;
+    font-size: 3rem;
+    position: relative;
+    bottom: 42rem;
+
+}
+
+
+&__btn {
+  position: relative;
+  bottom: 45rem;
+
+
+  animation: 1s moveInBottom  7s  ease-out;
+ 
+
+ 
+
+}
+
+
+
+}
+
+
+.carousel-item {
+
+  &__testimonial {
+    font-size: $default-font-size;
+  }
+
+  &__header {
+    color: $color-primary;
+  }
+  
+}
