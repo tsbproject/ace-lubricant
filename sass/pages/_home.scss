@@ -13,8 +13,9 @@
 
     @include media-breakpoint-down(sm) {
         height: 270vh;
-        padding: 32rem 0;
-        margin-top: 31rem;
+        padding: 15rem 0;
+        margin-top: 20rem;
+        margin-bottom: -20rem;
     }
 }
 

@@ -4,7 +4,10 @@
 
     @include media-breakpoint-down(sm) {
         position: relative;
-        bottom: -5rem;
+        top: 5rem;
+        right: 2rem;
+        bottom: -10rem;
+        left: 4rem;
      
 
    }

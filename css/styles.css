@@ -358,7 +358,7 @@ body {
   .carousel-caption__header {
     font-size: 4rem;
     position: absolute;
-    top: -50rem;
+    bottom: 50rem;
   }
 }
 .carousel-caption__description {
@@ -394,7 +394,10 @@ body {
 @media (max-width: 575.98px) {
   .composition {
     position: relative;
-    bottom: -5rem;
+    top: 5rem;
+    right: 2rem;
+    bottom: -10rem;
+    left: 4rem;
   }
 }
 .composition__photo {
@@ -900,8 +903,9 @@ body {
 @media (max-width: 575.98px) {
   .section-about {
     height: 270vh;
-    padding: 32rem 0;
-    margin-top: 31rem;
+    padding: 15rem 0;
+    margin-top: 20rem;
+    margin-bottom: -20rem;
   }
 }
 
