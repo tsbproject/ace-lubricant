@@ -7,8 +7,17 @@
     border-radius: 3px;
     box-shadow: 0 1.9rem 4rem rgba($color-primary-black, .15);
 
+    @include media-breakpoint-down(sm) {
+        padding: 5rem;
+    }
+ 
+
     &__products {
         width: 25rem;
+
+        @include media-breakpoint-down(sm) {
+            width: 5rem;
+        }
      
     }
 
