@@ -74,6 +74,14 @@
         position: absolute;
         top: 20rem;
 
+        @include media-breakpoint-down(sm) {
+            position: absolute;
+            top: 5rem;
+    
+    
+           
+        }
+
     }
 
 }
@@ -84,7 +92,8 @@
     $color-primary) ;
 
    @include media-breakpoint-down(sm) {
-      padding: 8rem 0;
+      padding: 10rem 0;
+      
    }
 }
 
@@ -105,7 +114,7 @@
     height: 75rem;
 
     @include media-breakpoint-down(sm) {
-        height: 33rem;
+        height: 120rem;
      }
 
     &__form {
@@ -113,7 +122,7 @@
         padding: 6rem;
 
         @include media-breakpoint-down(sm) {
-            width: 25%;
+            width: 80%;
             padding: 3rem;
     
          }

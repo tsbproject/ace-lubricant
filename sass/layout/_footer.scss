@@ -28,12 +28,12 @@
       padding-top: 2rem;
       display: inline-block;
 
-      /*@include respond(tab-port) {
+      @include media-breakpoint-down(sm) {
         width: 100%;
         text-align: center;
-      }*/
+      }
 
-    }
+  }
 
     &__list {
       list-style: none;
@@ -79,13 +79,12 @@
     width: 80%;
     float: right;
 
-    /*@include respond(tab-port) {
+    @include media-breakpoint-down(sm) {
       text-align: center;
       width: 100%;
       float: none;
-    }*/
+    }
 
-
-   }
+  }
 
 }

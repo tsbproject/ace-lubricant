@@ -101,6 +101,11 @@ body {
   letter-spacing: 0.2rem;
   transition: all 0.2s;
 }
+@media (max-width: 575.98px) {
+  .heading-secondary {
+    font-size: 2rem;
+  }
+}
 .heading-secondary:hover {
   transform: skewY(2deg) skewX(15deg) scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -496,11 +501,6 @@ body {
 .form__group:not(:last-child) {
   margin-bottom: 2rem;
 }
-@media (max-width: 575.98px) {
-  .form__group:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-}
 .form__textarea {
   font-size: 1.5rem;
   font-family: inherit;
@@ -516,15 +516,15 @@ body {
 }
 @media (max-width: 575.98px) {
   .form__textarea {
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-family: inherit;
     color: inherit;
-    padding: 0.7rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 1px;
     background-color: rgba(255, 255, 255, 0.5);
     border: none;
     border-bottom: 3px solid transparent;
-    width: 40%;
+    width: 70%;
     display: block;
     transition: all 3s;
   }
@@ -625,6 +625,11 @@ body {
 .form__submit {
   margin-top: 38rem;
 }
+@media (max-width: 575.98px) {
+  .form__group:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
 
 .testimony {
   width: 75h;
@@ -693,7 +698,7 @@ body {
   transition: all -2s;
 }
 .testimony__text {
-  transform: skewX(4deg);
+  transform: skewX(0deg);
 }
 .testimony__caption {
   position: absolute;
@@ -826,10 +831,12 @@ body {
   border-top: 1px solid #777;
   padding-top: 2rem;
   display: inline-block;
-  /*@include respond(tab-port) {
+}
+@media (max-width: 575.98px) {
+  .footer__navigation {
     width: 100%;
     text-align: center;
-  }*/
+  }
 }
 .footer__list {
   list-style: none;
@@ -857,11 +864,13 @@ body {
   padding-top: 2rem;
   width: 80%;
   float: right;
-  /*@include respond(tab-port) {
+}
+@media (max-width: 575.98px) {
+  .footer__copyright {
     text-align: center;
     width: 100%;
     float: none;
-  }*/
+  }
 }
 
 .slider {
@@ -917,6 +926,12 @@ body {
   position: absolute;
   top: 20rem;
 }
+@media (max-width: 575.98px) {
+  .section-testimony__btn {
+    position: absolute;
+    top: 5rem;
+  }
+}
 
 .section-book {
   padding: 15rem 0;
@@ -924,7 +939,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .section-book {
-    padding: 8rem 0;
+    padding: 10rem 0;
   }
 }
 
@@ -937,7 +952,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .book {
-    height: 33rem;
+    height: 120rem;
   }
 }
 .book__form {
@@ -946,7 +961,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .book__form {
-    width: 25%;
+    width: 80%;
     padding: 3rem;
   }
 }
