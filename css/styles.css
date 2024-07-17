@@ -436,8 +436,10 @@ body {
 }
 @media (max-width: 575.98px) {
   .composition__photo--p2 {
+    margin-top: 10rem;
     position: relative;
-    left: 15rem;
+    top: 300rem;
+    left: 3rem;
     width: 9rem;
     top: 6rem;
     transform: scale(1.3);
