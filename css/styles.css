@@ -601,8 +601,13 @@ body {
 }
 @media (max-width: 575.98px) {
   .testimony {
-    width: 15h;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(4, 77, 43, 0.6);
+    width: -100h;
     padding: 6rem;
+    font-size: 1.7rem;
+    transform: skewX(-12deg);
+    margin-bottom: 10rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -849,7 +854,14 @@ body {
   .section-testimony {
     position: relative;
     padding: 20rem 0;
-    margin-top: -10rem;
+    max-width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-testimony {
+    position: relative;
+    padding: 20rem 0;
+    width: 100%;
   }
 }
 .section-testimony__btn {

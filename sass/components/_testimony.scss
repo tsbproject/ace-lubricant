@@ -12,8 +12,14 @@
     margin-bottom: 10rem;
 
     @include media-breakpoint-down(sm) {
-        width: 15h;
+        box-shadow: 0 3rem 6rem rgba($color-primary-black, .1);
+        background-color: rgba($color-primary-deep, .6);
+        width: -100h;
         padding: 6rem;
+        padding-left: 59rem;
+        font-size: $default-font-size;
+        transform: skewX(-5deg);
+        margin-bottom: 10rem;
     }
 
 
