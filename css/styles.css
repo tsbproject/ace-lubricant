@@ -357,8 +357,7 @@ body {
 @media (max-width: 575.98px) {
   .carousel-caption__header {
     font-size: 4rem;
-    position: absolute;
-    bottom: 50rem;
+    margin-bottom: -50rem;
   }
 }
 .carousel-caption__description {
@@ -370,14 +369,20 @@ body {
 @media (max-width: 575.98px) {
   .carousel-caption__description {
     font-size: 1.7rem;
-    position: relative;
-    bottom: 42rem;
+    position: absolute;
+    bottom: 25rem;
   }
 }
 .carousel-caption__btn {
   position: relative;
   bottom: 45rem;
-  animation: 1s moveInBottom 7s ease-out;
+  animation: 4s moveInBottom ease-out;
+}
+@media (max-width: 575.98px) {
+  .carousel-caption__btn {
+    position: absolute;
+    top: 20rem;
+  }
 }
 
 .carousel-item__testimonial {
@@ -393,11 +398,21 @@ body {
 }
 @media (max-width: 575.98px) {
   .composition {
-    position: relative;
-    top: 5rem;
-    right: 2rem;
-    bottom: -10rem;
-    left: 4rem;
+    position: absolute;
+    top: 160rem;
+    right: 0;
+    bottom: 0;
+    left: 8rem;
+  }
+}
+@media (max-width: 429.98px) {
+  .composition {
+    margin-bottom: 70rem;
+    position: absolute;
+    top: 165rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
 .composition__photo {
@@ -426,7 +441,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .composition__photo--p1 {
-    width: 10rem;
+    width: 8rem;
     top: 0;
     left: 8rem;
     transform: scale(1.2);
@@ -443,7 +458,7 @@ body {
     position: relative;
     top: 300rem;
     left: 3rem;
-    width: 9rem;
+    width: 7rem;
     top: 6rem;
     transform: scale(1.3);
   }
@@ -462,10 +477,10 @@ body {
 }
 @media (max-width: 575.98px) {
   .composition__photo--p3 {
-    width: 10rem;
+    width: 8rem;
     position: relative;
     top: 1rem;
-    left: -3rem;
+    left: 2rem;
     transform: scale(1.1);
   }
 }
@@ -491,6 +506,7 @@ body {
 @media (max-width: 575.98px) {
   .feature-box {
     padding: 5rem;
+    margin-bottom: 2rem;
   }
 }
 .feature-box__products {
@@ -922,7 +938,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .section-features {
-    height: 480vh;
+    height: 470vh;
     margin-top: 10rem;
     background-color: #cfe8aa;
   }

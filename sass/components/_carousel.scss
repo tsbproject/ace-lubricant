@@ -69,10 +69,8 @@ margin-bottom: 28rem;
 
     @include media-breakpoint-down(sm) {
       font-size: $heading-secondary-font;
-
-      position: absolute;
-      bottom: 50rem;
-      // margin-bottom: -50rem;
+       
+      margin-bottom: -50rem;
 
     }
    }
@@ -86,10 +84,10 @@ margin-bottom: 28rem;
 
     @include media-breakpoint-down(sm) {
       font-size: $default-font-size;
-      position: relative;
-      bottom:42rem;
+       position: absolute;
+       bottom: 25rem;
 
-      // margin-bottom: -50rem;
+      
 
     }
 
@@ -101,10 +99,18 @@ margin-bottom: 28rem;
   bottom: 45rem;
 
 
-  animation: 1s moveInBottom  7s  ease-out;
+  animation: 4s moveInBottom  ease-out;
  
 
- 
+  @include media-breakpoint-down(sm) {
+
+    
+    position: absolute;
+    top: 20rem;
+    
+
+  }
+
 
 }
 
