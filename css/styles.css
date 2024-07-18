@@ -703,7 +703,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .nav__link {
-    position: absolute;
+    position: relative;
     left: -1rem;
   }
 }

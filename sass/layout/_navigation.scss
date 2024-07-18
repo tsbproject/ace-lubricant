@@ -46,7 +46,7 @@
      text-decoration: none;
 
      @include media-breakpoint-down(sm){
-      position:absolute;
+      position:relative;
       left: -1rem;
 
      
