@@ -1,6 +1,10 @@
 
 .carousel-indicators {
 margin-bottom: 28rem;
+
+@include media-breakpoint-down(sm) {
+  margin-bottom: 18rem;
+}
 }
 
 

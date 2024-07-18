@@ -15,7 +15,7 @@
         height: 270vh;
         padding: 15rem 0;
         margin-top: 20rem;
-        margin-bottom: -20rem;
+        margin-bottom: -43rem;
     }
 }
 
@@ -40,8 +40,8 @@
     } //section-features > * {}
     
     @include media-breakpoint-down(sm) {
-        height: 470vh;
-        margin-top: 10rem;
+        height: 370vh;
+        margin-top: 2rem;
         background-color: $color-primary-light;
 
     }
@@ -93,6 +93,8 @@
     $color-primary) ;
 
    @include media-breakpoint-down(sm) {
+    background-image:linear-gradient(to right bottom, $color-primary-light, 
+    $color-primary) ;
       padding: 10rem 0;
       
    }
@@ -102,10 +104,10 @@
 
 .book {
     background-image:linear-gradient( 105deg, 
-    rgba($color-secondary-white, .9) 0%,
+    rgba($color-primary-light, 10),
     rgba($color-secondary-white, .9) 50%,
     
-    transparent 50%), 
+    transparent 20%), 
     
     url(../images/ace4.jpg);
     background-size: cover; // or 100% value
