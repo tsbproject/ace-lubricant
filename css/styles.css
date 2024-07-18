@@ -669,6 +669,20 @@ body {
   filter: blur(0.3rem) brightness(80%);
 }
 
+#scrollUpBtn {
+  font-size: 4rem;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+  background-color: #044d2b;
+}
+@media (max-width: 575.98px) {
+  #scrollUpBtn {
+    font-size: 2rem;
+  }
+}
+
 .nav__navbar-nav {
   list-style: none;
   display: inline-flex;

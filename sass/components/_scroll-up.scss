@@ -1,0 +1,13 @@
+#scrollUpBtn {
+    font-size: 4rem;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    background-color: $color-primary-deep;
+
+    @include media-breakpoint-down(sm) {
+       font-size: 2rem;
+    }
+
+}
