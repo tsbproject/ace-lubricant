@@ -46,7 +46,7 @@
      text-decoration: none;
 
      @include media-breakpoint-down(sm){
-      position:relative;
+      position:absolute;
       left: -1rem;
 
      
@@ -85,7 +85,12 @@
     
     .offcanvas {
     height: 100rem;
-    max-width: 20rem;
+
+
+    @include media-breakpoint-down(sm) {
+      max-width: 20rem;
+    }
+    
     
     
   }
