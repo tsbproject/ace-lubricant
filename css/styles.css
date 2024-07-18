@@ -704,7 +704,7 @@ body {
 @media (max-width: 575.98px) {
   .nav__link {
     position: relative;
-    left: 3rem;
+    left: -1rem;
   }
 }
 .navbar-toggler {
@@ -717,6 +717,7 @@ body {
 
 .offcanvas {
   height: 100rem;
+  max-width: 20rem;
 }
 
 .dropdown-menu {
@@ -727,6 +728,14 @@ body {
   width: 30rem;
   margin-left: 15rem;
 }
+@media (max-width: 575.98px) {
+  .dropdown-menu {
+    font-size: 1rem;
+    height: 30rem;
+    width: 20rem;
+    margin-left: -3rem;
+  }
+}
 
 .about-dropdowm {
   font-size: 1.5rem;
@@ -735,6 +744,14 @@ body {
   height: 15rem;
   width: 30rem;
   margin-left: 15rem;
+}
+@media (max-width: 575.98px) {
+  .about-dropdowm {
+    font-size: 1rem;
+    height: 30rem;
+    width: 20rem;
+    margin-left: -3rem;
+  }
 }
 
 .dropdown-item {
