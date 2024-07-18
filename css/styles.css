@@ -776,10 +776,52 @@ body {
   color: #cfe8aa;
 }
 
-.header {
+.navbar {
   height: 15rem;
   background-color: #cfe8aa;
 }
+
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar.shrink {
+  padding: 3rem 5rem;
+  background-color: #f6f1f1;
+  height: 7rem;
+}
+
+#logo {
+  transition: all 0.3s ease;
+}
+
+#logo.shrink {
+  padding: 0.5rem 1rem;
+  width: 7rem;
+  height: 4rem;
+}
+@media (max-width: 575.98px) {
+  #logo.shrink {
+    position: relative;
+    top: -4rem;
+  }
+}
+
+#navlink {
+  transition: all 0.3s ease;
+}
+
+#navlink.shrink {
+  padding: 1rem 5rem;
+  height: 3rem;
+}
+@media (max-width: 575.98px) {
+  #navlink.shrink {
+    position: absolute;
+    bottom: -25rem;
+  }
+}
+
 .header__logo {
   width: 12rem;
   height: 8rem;
