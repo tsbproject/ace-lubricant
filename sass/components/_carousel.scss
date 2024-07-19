@@ -5,6 +5,13 @@ margin-bottom: 28rem;
 @include media-breakpoint-down(sm) {
   margin-bottom: 18rem;
 }
+
+@include media-breakpoint-down(md) {
+  margin-bottom: 18rem;
+}
+
+
+
 }
 
 
@@ -32,6 +39,22 @@ margin-bottom: 28rem;
 
    
       @include media-breakpoint-down(sm) {
+
+        height: 121.75vh;
+     
+     
+      width:100%;
+      filter: brightness(50%);
+       
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 110vh, 0 100%);
+         clip-path: polygon(0 0, 100% 0, 100% 110vh, 0 100%);
+
+        
+  
+      }
+
+
+      @include media-breakpoint-down(md) {
 
         height: 121.75vh;
      
@@ -77,6 +100,13 @@ margin-bottom: 28rem;
       margin-bottom: -50rem;
 
     }
+
+    @include media-breakpoint-down(md) {
+      font-size: $heading-secondary-font;
+       
+     
+
+    }
    }
 
 
@@ -90,6 +120,16 @@ margin-bottom: 28rem;
       font-size: $default-font-size;
        position: absolute;
        bottom: 25rem;
+
+      
+
+    }
+
+    @include media-breakpoint-down(md) {
+       font-size: $default-font-size;
+       text-align: center;
+       position: absolute;
+       bottom: 35rem;
 
       
 
@@ -114,6 +154,13 @@ margin-bottom: 28rem;
     
 
   }
+
+  // @include media-breakpoint-down(md) {
+
+   
+    
+
+  // }
 
 
 }

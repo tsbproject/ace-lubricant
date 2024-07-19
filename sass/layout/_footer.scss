@@ -3,10 +3,14 @@
     padding: 10rem 0;
     font-size: 1.4rem;
     color: $color-primary-light;
+    border-top: .5rem solid;
+    border-color: rgba($color-primary, .8);
 
-    // @include respond(tab-port) {
-    //    padding: 8rem 0;
-    // }
+    @include media-breakpoint-down(sm) {
+       padding: 8rem 0;
+       border-top: .3rem solid;
+       border-color: rgba($color-primary, .8);
+    }
 
     &__logo-box {
         text-align: center;

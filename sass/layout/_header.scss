@@ -33,6 +33,12 @@
     top: -4rem;
   }
 
+  @include media-breakpoint-down(md) {
+    position: relative;
+    top: -4rem;
+  }
+
+
   
 
 }
@@ -72,6 +78,19 @@
       bottom: 2rem;
       right: 4rem;
   }
+
+  @include media-breakpoint-down(md) {
+
+    padding: 1rem 5rem;
+    font-size: 2rem;
+   
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
+}
+
+
+
 
 }
 

@@ -32,90 +32,89 @@
 
 
 <body>
-    <header class="header fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img class="header__logo" src="images/ace-logo1.png" alt="site-logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ace Lubricants</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="nav__navbar-nav justify-content-center flex-grow-1 pe-3 ms-auto">
-               
-                <li class="nav__item">
-                  <a class="nav__link active" aria-current="page" href="index.html">Home</a>
-              </li>
+  <header class=" fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img id="logo" class="header__logo" src="images/ace-logo1.png" alt="site-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span id="toggler" class="bi bi-list-nested"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ace Lubricants</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav__navbar-nav justify-content-center flex-grow-1 pe-3 ms-auto">
+             
+              <li class="nav__item">
+                <a  id="navlink"  class="nav__link active" aria-current="page" href="index.html">Home</a>
+            </li>
 
 
-              <li class="nav__item dropdown">
-                <a class="nav__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Who we are
+            <li class="nav__item dropdown">
+              <a  id="navlink"  class="nav__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Who we are
+              </a>
+              <ul class="dropdown-menu about-dropdowm" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="about.html">Company profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="team.html">Our team</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+          </li>
+            
+            
+            
+            <li class="nav__item dropdown">
+                <a  id="navlink"  class="nav__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Our products
                 </a>
-                <ul class="dropdown-menu about-dropdowm" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="about.html">Company profile</a></li>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="ace-sprint.html">ACE SPRINT SAE 40</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="team.html">Our team</a></li>
+                    
+                    <li><a class="dropdown-item" href="ace-superhd.html">ACE SUPER HD 50 4L</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    
+                    <li><a class="dropdown-item" href="ace-plus.html">ACE PLUS 20W 50</a></li>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li><a class="dropdown-item" href="ace-atfdextron.html">ACE ATF DEXTRON II</a></li>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li><a class="dropdown-item" href="ace-hydraulicoil.html">AH 68 HYDRAULIC OIL</a></li>
+                    <li><hr class="dropdown-divider"></li>
+
+
+                    <li><a class="dropdown-item" href="ace-speedmax.html">  ACE SPEEDMAX 85W 140</a></li>
+                    <li><hr class="dropdown-divider"></li>
+
+
+                   
+                  
+                   
                 </ul>
             </li>
+            <li class="nav__item">
+                <a  id="navlink"  class="nav__link" href="photo-gallery.html">Gallery</a>
+            </li>
+            
+            <li class="nav__item">
+                <a  id="navlink"  class="nav__link" href="contact.html">Contact us</a>
+            </li>
+        </ul>
               
               
-              
-              <li class="nav__item dropdown">
-                  <a class="nav__link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Our products
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="ace-sprint.html">ACE SPRINT SAE 40</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      
-                      <li><a class="dropdown-item" href="ace-superhd.html">ACE SUPER HD 50 4L</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      
-                      <li><a class="dropdown-item" href="ace-plus.html">ACE PLUS 20W 50</a></li>
-                      <li><hr class="dropdown-divider"></li>
-
-                      <li><a class="dropdown-item" href="ace-atfdextron.html">ACE ATF DEXTRON II</a></li>
-                      <li><hr class="dropdown-divider"></li>
-
-                      <li><a class="dropdown-item" href="ace-hydraulicoil.html">AH 68 HYDRAULIC OIL</a></li>
-                      <li><hr class="dropdown-divider"></li>
-
-
-                      <li><a class="dropdown-item" href="ace-speedmax.html">  ACE SPEEDMAX 85W 140</a></li>
-                      <li><hr class="dropdown-divider"></li>
-
-
-                     
-                    
-                     
-                  </ul>
-              </li>
-              <li class="nav__item">
-                  <a class="nav__link" href="photo-gallery.html">Gallery</a>
-              </li>
-              
-              <li class="nav__item">
-                  <a class="nav__link" href="contact.html">Contact us</a>
-              </li>
-          </ul>
-                
-                
-              
-            </div>
+            
           </div>
         </div>
-      </nav>
-       
-        
-      </header>
-    
+      </div>
+    </nav>
+     
+      
+    </header>
     <main>
 
   
