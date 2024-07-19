@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('navbar');
     const logo = document.getElementById('logo');
     const navlink = document.getElementById('navlink');
+    const toggler = document.getElementById('toggler');
     let lastScrollTop = 0;
 
     window.addEventListener('scroll', function() {
@@ -13,12 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
             navbar.classList.add('shrink');
             logo.classList.add('shrink');
             navlink.classList.add('shrink');
+            toggler.classList.add('shrink');
         } else {
             // Scrolling up
             if (scrollTop === 0) {
                 navbar.classList.remove('shrink');
                 logo.classList.remove('shrink');
                 navlink.classList.remove('shrink');
+                toggler.classList.remove('shrink');
             }
         }
 

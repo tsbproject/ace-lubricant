@@ -55,6 +55,27 @@
 }
 
 
+#toggler
+ {
+  transition: all 0.3s ease;
+}
+#toggler.shrink {
+  padding: 1rem 5rem;
+  height: 3rem;
+
+    @include media-breakpoint-down(sm) {
+
+      padding: 1rem 5rem;
+      font-size: 2rem;
+     
+      position: absolute;
+      bottom: 2rem;
+      right: 4rem;
+  }
+
+}
+
+
 
 
 
