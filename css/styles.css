@@ -1069,9 +1069,9 @@ body {
 }
 @media (max-width: 575.98px) {
   .section-about {
-    height: 260vh;
-    padding: 10rem 0;
-    margin-top: 40rem;
+    height: 280vh;
+    padding: 15rem 0;
+    margin-top: 50rem;
     margin-bottom: 5rem;
   }
 }
@@ -1097,8 +1097,8 @@ body {
 }
 @media (max-width: 575.98px) {
   .section-features {
-    height: 450vh;
-    margin-top: 2rem;
+    height: 460vh;
+    margin-top: 10rem;
     background-color: #cfe8aa;
   }
 }
