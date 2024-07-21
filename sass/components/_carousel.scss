@@ -99,15 +99,19 @@ margin-bottom: 28rem;
 
   position: absolute;
   top: 80%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+  left: -50%;
+  bottom: 50%;
+  right: -50%;
+  // transform: translate(-50%, -50%);
   text-align: center;
 
   @include media-breakpoint-down(sm) {
     position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: -50%;
+    bottom: 50%;
+    right: -50%;
+    // transform: translate(-50%, -50%);
     text-align: center;
   }
 
@@ -115,8 +119,9 @@ margin-bottom: 28rem;
   @include media-breakpoint-down(md) {
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: -50%;
+    right: -50%;
+    // transform: translate(-50%, -50%);
     text-align: center;
   }
 
@@ -124,10 +129,14 @@ margin-bottom: 28rem;
   @include media-breakpoint-down(lg) {
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: -50%;
+    right: -50%;
+    // transform: translate(-50%, -50%);
     text-align: center;
   }
+
+
+  
 
 
   
