@@ -132,7 +132,7 @@ margin-bottom: 28rem;
 
   @include media-breakpoint-down(xl) {
     position: absolute;
-    top: 100%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -152,12 +152,9 @@ margin-bottom: 28rem;
     }
 
     @include media-breakpoint-down(lg) {
-      font-size: $heading-secondary-font;
+      font-size: 2rem;
     }
 
-    @include media-breakpoint-down(xl) {
-      font-size: $heading-primary-font-main;
-    }
 
     
    }

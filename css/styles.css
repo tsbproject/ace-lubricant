@@ -387,7 +387,7 @@ body {
 @media (max-width: 1199.98px) {
   .carousel-caption {
     position: absolute;
-    top: 100%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -410,12 +410,7 @@ body {
 }
 @media (max-width: 991.98px) {
   .carousel-caption__header {
-    font-size: 4rem;
-  }
-}
-@media (max-width: 1199.98px) {
-  .carousel-caption__header {
-    font-size: 8rem;
+    font-size: 2rem;
   }
 }
 .carousel-caption__description {
