@@ -118,6 +118,39 @@ body {
 
 .section-about {
 
+    &__photo {
+        width: 100%;
+        height: auto;
+        border: 1px solid;
+        border-radius: 2rem;
+        border-width: 1rem;
+        border-color: $color-primary-light;
+   
+    
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            height: auto;
+            border: solid;
+            border-radius: 2rem;
+            border-width: .2rem;
+            border-color: $color-primary-light;
+            outline: 2rem;
+        }
+    
+        @include media-breakpoint-down(md) {
+            
+        }
+    
+        
+    
+       
+    
+    
+    
+    
+    
+    }
+
     &__heading {
         font-size: $heading-secondary-font;
         font-weight: 600;
