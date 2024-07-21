@@ -176,6 +176,14 @@ body {
   font-size: 1.5rem;
 }
 
+.vision {
+  text-align: center;
+  padding: 3rem 0;
+}
+.vision__heading {
+  text-align: center;
+}
+
 .u-center-text {
   text-align: center !important;
 }
@@ -952,6 +960,20 @@ body {
   }
 }
 
+.top-banner {
+  background-image: url("../images/ace2.jpg");
+  background-attachment: fixed;
+  background-position: cover;
+  background-size: cover;
+  background-color: #cfe8aa;
+  opacity: 75;
+  height: 40rem;
+}
+.top-banner__text {
+  font-size: 10rem;
+  margin-top: 15rem;
+}
+
 .header-info {
   background-color: #ffffff;
   font-style: italic;
@@ -1157,6 +1179,16 @@ body {
   .book__form {
     width: 80%;
     padding: 3rem;
+  }
+}
+
+.vision-mission {
+  height: 35rem;
+  background-color: #cfe8aa;
+}
+@media (max-width: 575.98px) {
+  .vision-mission {
+    height: 70rem;
   }
 }
 

@@ -140,4 +140,22 @@
     }
 }
 
+
+.vision-mission {
+    height: 35rem;
+    background-color: $color-primary-light;
+
+    @include media-breakpoint-down(sm) {
+        height:70rem;
+    } 
+    
+}
+
+.company-profile-heading {
+
+    
+
+
+}
+
  
