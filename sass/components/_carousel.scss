@@ -99,7 +99,7 @@ margin-bottom: 28rem;
 
   position: absolute;
   top: 80%;
-  left: 50%;
+  left: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
 
@@ -130,13 +130,7 @@ margin-bottom: 28rem;
   }
 
 
-  @include media-breakpoint-down(xl) {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+  
 
   &__header {
     font-family: "Oxygen" sans-serif;
@@ -144,7 +138,7 @@ margin-bottom: 28rem;
     color: $color-primary-light;
 
      @include media-breakpoint-down(sm) {
-       font-size: $heading-secondary-font;
+       font-size: 4rem;
      }
 
      @include media-breakpoint-down(md) {
