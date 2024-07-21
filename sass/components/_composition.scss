@@ -7,5 +7,24 @@
     border-color: $color-primary-light;
     outline: 2rem;
 
+    @include media-breakpoint-down(sm) {
+
+    }
+
+    @include media-breakpoint-down(md) {
+        
+    }
+
+    @include media-breakpoint-down(lg) {
+        
+    }
+
+    @include media-breakpoint-down(xl) {
+        
+    }
+
+
+
+
 
 }

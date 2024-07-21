@@ -157,33 +157,6 @@ body {
   font-size: 1.5rem;
 }
 
-.carousel-caption__header {
-  font-family: "Oxygen" sans-serif;
-  font-size: 10rem;
-  position: relative;
-  bottom: 42rem;
-  color: #cfe8aa;
-  animation: moveInLeft 2s ease-out;
-}
-.carousel-caption__description {
-  font-family: "Lora" serif;
-  font-size: 3rem;
-  position: relative;
-  bottom: 42rem;
-  animation: moveInRight 5s ease-out;
-}
-
-.carousel-indicators {
-  margin-bottom: 28rem;
-}
-
-.carousel-item__testimonial {
-  font-size: 1.7rem;
-}
-.carousel-item__header {
-  color: #006837;
-}
-
 .u-center-text {
   text-align: center !important;
 }
@@ -423,8 +396,6 @@ body {
 .carousel-caption__header {
   font-family: "Oxygen" sans-serif;
   font-size: 8rem;
-  position: relative;
-  bottom: 42rem;
   color: #cfe8aa;
 }
 @media (max-width: 575.98px) {
@@ -439,12 +410,12 @@ body {
 }
 @media (max-width: 991.98px) {
   .carousel-caption__header {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 }
 @media (max-width: 1199.98px) {
   .carousel-caption__header {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 }
 .carousel-caption__description {
@@ -504,7 +475,6 @@ body {
   border-color: #cfe8aa;
   outline: 2rem;
 }
-
 .feature-box {
   margin-top: 10rem;
   background-color: rgba(255, 255, 255, 0.8);
@@ -1107,8 +1077,16 @@ body {
   .section-about {
     height: 270vh;
     padding: 15rem 0;
-    margin-top: 25rem;
+    margin-top: 2rem;
     margin-bottom: -43rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .section-about {
+    height: 250vh;
+    padding: 5rem 0;
+    margin-top: 23rem;
+    margin-bottom: 5rem;
   }
 }
 

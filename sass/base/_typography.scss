@@ -165,55 +165,55 @@ body {
     
     
     
-    .carousel-caption {
+    // .carousel-caption {
     
-      &__header {
-        font-family: "Oxygen" sans-serif;
-        font-size: 10rem;
-        position: relative;
-        bottom: 42rem;
-        color: $color-primary-light;
+    //   &__header {
+    //     font-family: "Oxygen" sans-serif;
+    //     font-size: 10rem;
+    //     position: relative;
+    //     bottom: 42rem;
+    //     color: $color-primary-light;
 
-        animation: moveInLeft 2s ease-out;
+    //     animation: moveInLeft 2s ease-out;
     
         
     
-       }
+    //    }
     
     
-      &__description {
-        font-family: "Lora" serif ;
-        font-size: 3rem;
-        position: relative;
-        bottom: 42rem;
+    //   &__description {
+    //     font-family: "Lora" serif ;
+    //     font-size: 3rem;
+    //     position: relative;
+    //     bottom: 42rem;
 
-        animation: moveInRight 5s ease-out;
+    //     animation: moveInRight 5s ease-out;
     
         
     
-      }
+    //   }
     
     
     
     
     
-    }
+    // }
 
 
-    .carousel-indicators {
-        margin-bottom: 28rem;
-        }
+    // .carousel-indicators {
+    //     margin-bottom: 28rem;
+    //     }
         
     
     
-    .carousel-item {
+    // .carousel-item {
     
-      &__testimonial {
-        font-size: $default-font-size;
-      }
+    //   &__testimonial {
+    //     font-size: $default-font-size;
+    //   }
     
-      &__header {
-        color: $color-primary;
-      }
+    //   &__header {
+    //     color: $color-primary;
+    //   }
       
-    }
+    // }
