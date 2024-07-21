@@ -41,9 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // THIS HIDING HTML EXTENTION IN BROWSER
-if (window.history && window.history.pushState) {
-    window.history.pushState({}, document.title, window.location.pathname.replace('.html', ''));
-}
+// if (window.history && window.history.pushState) {
+//     window.history.pushState({}, document.title, window.location.pathname.replace('.html', ''));
+// }
 
 
 //  CODE TO CONFIGURE SCROLL UP BUTTON

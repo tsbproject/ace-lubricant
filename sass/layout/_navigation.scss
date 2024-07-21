@@ -41,9 +41,17 @@
      font-size: 2rem;
      color: $color-primary;
      position: relative;
-     left: 25rem;
-     margin-right: 3rem;
+     top: -1rem;
+     right: 15rem;
+     left: 2rem;
+     margin-right: 5rem;
      text-decoration: none;
+
+     &:not(:last-child) {
+
+      margin-right: 4rem;
+
+     }
 
      @include media-breakpoint-down(sm){
       position:relative;
@@ -102,7 +110,10 @@
   background-color: $color-primary-deep;
   height: 30rem;
   width: 30rem;
-  margin-left: 15rem;
+  position: absolute;
+  top: 5rem;
+ 
+
 
   @include media-breakpoint-down(sm) {
   font-size: 1rem;
@@ -120,7 +131,7 @@
   background-color: $color-primary-deep;
   height: 15rem;
   width: 30rem;
-  margin-left: 15rem;
+  margin-left: 1rem;
 
   @include media-breakpoint-down(sm) {
     font-size: 1rem;

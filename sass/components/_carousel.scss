@@ -10,6 +10,16 @@ margin-bottom: 28rem;
   margin-bottom: 18rem;
 }
 
+@include media-breakpoint-down(lg) {
+  margin-bottom: 13rem;
+}
+
+
+@include media-breakpoint-down(xl) {
+  margin-bottom: 13rem;
+}
+
+
 
 
 }
@@ -87,6 +97,47 @@ margin-bottom: 28rem;
 
 .carousel-caption {
 
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  @include media-breakpoint-down(md) {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  @include media-breakpoint-down(lg) {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+  @include media-breakpoint-down(xl) {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
   &__header {
     font-family: "Oxygen" sans-serif;
     font-size: $heading-primary-font-main;
@@ -96,13 +147,29 @@ margin-bottom: 28rem;
 
     @include media-breakpoint-down(sm) {
       font-size: $heading-secondary-font;
-       
-      margin-bottom: -50rem;
+   
 
     }
 
     @include media-breakpoint-down(md) {
-      font-size: $heading-secondary-font;
+      font-size: 4rem;
+     
+       
+     
+
+    }
+
+    @include media-breakpoint-down(lg) {
+      font-size: 6rem;
+     
+       
+     
+
+    }
+
+    @include media-breakpoint-down(xl) {
+      font-size: 6rem;
+     
        
      
 
@@ -113,34 +180,52 @@ margin-bottom: 28rem;
   &__description {
     font-family: "Lora" serif ;
     font-size: 3rem;
-    position: relative;
-    bottom:42rem;
+    
 
     @include media-breakpoint-down(sm) {
       font-size: $default-font-size;
-       position: absolute;
-       bottom: 25rem;
+      
 
       
 
     }
 
     @include media-breakpoint-down(md) {
-       font-size: $default-font-size;
-       text-align: center;
-       position: absolute;
-       bottom: 35rem;
+      font-size: 1.5rem;
+      
 
       
 
     }
 
+    @include media-breakpoint-down(lg) {
+      font-size: 1.5rem;
+      
+
+      
+
+    }
+
+
+    @include media-breakpoint-down(xl) {
+      font-size: 1.5rem;
+      
+
+      
+
+    }
+
+
+   
+
 }
 
 
 &__btn {
-  position: relative;
-  bottom: 45rem;
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  
 
 
   animation: 4s moveInBottom  ease-out;
@@ -148,19 +233,23 @@ margin-bottom: 28rem;
 
   @include media-breakpoint-down(sm) {
 
-    
-    position: absolute;
-    top: 20rem;
+    font-size: 7rem;
+
+
+ 
+  
     
 
   }
 
-  // @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(md) {
+
+    font-size: 10rem;
 
    
     
 
-  // }
+  }
 
 
 }

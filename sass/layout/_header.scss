@@ -38,6 +38,11 @@
     top: -4rem;
   }
 
+  @include media-breakpoint-down(lg) {
+    position: relative;
+    top: -4rem;
+  }
+
 
   
 
@@ -87,6 +92,16 @@
     position: absolute;
     bottom: 2rem;
     right: 4rem;
+}
+
+@include media-breakpoint-down(lg) {
+
+  padding: 1rem 5rem;
+  font-size: 2rem;
+ 
+  position: absolute;
+  bottom: 2rem;
+  right: 4rem;
 }
 
 
