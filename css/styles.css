@@ -408,11 +408,6 @@ body {
     font-size: 4rem;
   }
 }
-@media (max-width: 991.98px) {
-  .carousel-caption__header {
-    font-size: 2rem;
-  }
-}
 .carousel-caption__description {
   font-family: "Lora" serif;
   font-size: 3rem;
