@@ -60,10 +60,10 @@
     @include media-breakpoint-down(sm) {
 
       padding: 1rem 2rem;
-      height: 3rem;
+      height: 5rem;
      
-      position: absolute;
-      bottom: -25rem;
+      // position: absolute;
+      // bottom: -25rem;
   }
 
 }
@@ -73,6 +73,7 @@
  {
   transition: all 0.3s ease;
 }
+
 #toggler.shrink {
   padding: 1rem 5rem;
   height: 3rem;

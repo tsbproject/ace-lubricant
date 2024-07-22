@@ -907,9 +907,7 @@ body {
 @media (max-width: 575.98px) {
   #navlink.shrink {
     padding: 1rem 2rem;
-    height: 3rem;
-    position: absolute;
-    bottom: -25rem;
+    height: 5rem;
   }
 }
 
