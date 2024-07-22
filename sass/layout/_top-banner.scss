@@ -8,8 +8,14 @@
     height: 40rem;
 
     &__text {
-        font-size: 10rem;
+        font-size: 7rem;
         margin-top: 15rem;
+
+
+        @include media-breakpoint-down(sm) {
+            font-size: 4rem;
+            margin-top: 15rem;
+        }
 
     }
 }

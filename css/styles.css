@@ -972,8 +972,14 @@ body {
   height: 40rem;
 }
 .top-banner__text {
-  font-size: 10rem;
+  font-size: 7rem;
   margin-top: 15rem;
+}
+@media (max-width: 575.98px) {
+  .top-banner__text {
+    font-size: 4rem;
+    margin-top: 15rem;
+  }
 }
 
 .header-info {
