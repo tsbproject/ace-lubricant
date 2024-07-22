@@ -13,7 +13,7 @@
     // background-color: $color-primary-light;
 
     @include media-breakpoint-down(sm) {
-        height: 280vh;
+        // height: vh;
         padding: 15rem 0;
         margin-top: 50rem;
         margin-bottom: 5rem;
@@ -30,7 +30,7 @@
 
 
 .section-features {
-    height: 100vh;
+    // height: 100vh;
     margin-top: 10rem;
     background-color: $color-primary-light;
     background-image: linear-gradient(
@@ -122,10 +122,10 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
 
-    height: 75rem;
+    // height: 75rem;
 
     @include media-breakpoint-down(sm) {
-        height: 120rem;
+        // height: 120rem;
      }
 
     &__form {
@@ -133,7 +133,7 @@
         padding: 6rem;
 
         @include media-breakpoint-down(sm) {
-            width: 80%;
+            width: 65%;
             padding: 3rem;
     
          }

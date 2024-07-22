@@ -58,6 +58,9 @@
   height: 3rem;
 
     @include media-breakpoint-down(sm) {
+
+      padding: 1rem 2rem;
+      height: 3rem;
      
       position: absolute;
       bottom: -25rem;

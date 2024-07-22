@@ -119,8 +119,6 @@ body {
 .section-about {
 
     &__photo {
-        width: 100%;
-        height: auto;
         border: 1px solid;
         border-radius: 2rem;
         border-width: 1rem;
@@ -128,8 +126,6 @@ body {
    
     
         @include media-breakpoint-down(sm) {
-            width: 100%;
-            height: auto;
             border: solid;
             border-radius: 2rem;
             border-width: .2rem;
@@ -201,8 +197,18 @@ body {
         
     }
 
-    
+
 }
+
+
+.profile {
+
+    &__img {
+        border-radius: 2rem;
+        border: .3rem solid  $color-primary-light;
+    }
+}
+
 
 
 

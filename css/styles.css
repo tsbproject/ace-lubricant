@@ -125,8 +125,6 @@ body {
 }
 
 .section-about__photo {
-  width: 100%;
-  height: auto;
   border: 1px solid;
   border-radius: 2rem;
   border-width: 1rem;
@@ -134,8 +132,6 @@ body {
 }
 @media (max-width: 575.98px) {
   .section-about__photo {
-    width: 100%;
-    height: auto;
     border: solid;
     border-radius: 2rem;
     border-width: 0.2rem;
@@ -182,6 +178,11 @@ body {
 }
 .vision__heading {
   text-align: center;
+}
+
+.profile__img {
+  border-radius: 2rem;
+  border: 0.3rem solid #cfe8aa;
 }
 
 .u-center-text {
@@ -795,6 +796,7 @@ body {
     left: -1rem;
   }
 }
+
 #toggler {
   padding: 0;
   border: none;
@@ -904,6 +906,8 @@ body {
 }
 @media (max-width: 575.98px) {
   #navlink.shrink {
+    padding: 1rem 2rem;
+    height: 3rem;
     position: absolute;
     bottom: -25rem;
   }
@@ -1091,7 +1095,6 @@ body {
 }
 @media (max-width: 575.98px) {
   .section-about {
-    height: 280vh;
     padding: 15rem 0;
     margin-top: 50rem;
     margin-bottom: 5rem;
@@ -1107,7 +1110,6 @@ body {
 }
 
 .section-features {
-  height: 100vh;
   margin-top: 10rem;
   background-color: #cfe8aa;
   background-image: linear-gradient(to right bottom, rgba(207, 232, 170, 0.8), rgba(0, 104, 55, 0.8)), url(../images/ace4.jpg);
@@ -1164,12 +1166,6 @@ body {
   background-size: cover;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  height: 75rem;
-}
-@media (max-width: 575.98px) {
-  .book {
-    height: 120rem;
-  }
 }
 .book__form {
   width: 50%;
@@ -1177,7 +1173,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .book__form {
-    width: 80%;
+    width: 65%;
     padding: 3rem;
   }
 }
