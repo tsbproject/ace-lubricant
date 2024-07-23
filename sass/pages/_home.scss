@@ -15,7 +15,7 @@
     @include media-breakpoint-down(sm) {
         // height: vh;
         padding: 15rem 0;
-        margin-top: 50rem;
+        margin-top: 5rem;
         margin-bottom: 5rem;
     }
 
@@ -30,7 +30,7 @@
 
 
 .section-features {
-    // height: 100vh;
+    height: 100vh;
     margin-top: 10rem;
     background-color: $color-primary-light;
     background-image: linear-gradient(
@@ -48,7 +48,7 @@
     } //section-features > * {}
     
     @include media-breakpoint-down(sm) {
-        height: 460vh;
+        height: 200rem;
         margin-top: 10rem;
         background-color: $color-primary-light;
 
