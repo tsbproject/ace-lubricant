@@ -1085,7 +1085,7 @@ body {
   background-position: cover;
   background-size: cover;
   background-color: #cfe8aa;
-  opacity: 75;
+  opacity: 0.7;
   height: 40rem;
 }
 .top-banner__text {
@@ -1105,7 +1105,7 @@ body {
   background-position: cover;
   background-size: cover;
   background-color: #cfe8aa;
-  opacity: 75;
+  opacity: 0.7;
   height: 40rem;
 }
 .top-banner__team__text {
@@ -1114,6 +1114,26 @@ body {
 }
 @media (max-width: 575.98px) {
   .top-banner__team__text {
+    font-size: 4rem;
+    margin-top: 15rem;
+  }
+}
+
+.top-banner__contact {
+  background-image: url("../images/ace-contact-banner.jpg");
+  background-attachment: fixed;
+  background-position: cover;
+  background-size: cover;
+  background-color: #cfe8aa;
+  opacity: 0.7;
+  height: 40rem;
+}
+.top-banner__contact__text {
+  font-size: 7rem;
+  margin-top: 15rem;
+}
+@media (max-width: 575.98px) {
+  .top-banner__contact__text {
     font-size: 4rem;
     margin-top: 15rem;
   }

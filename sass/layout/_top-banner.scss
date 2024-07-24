@@ -4,7 +4,7 @@
     background-position: cover;
     background-size: cover;
     background-color: $color-primary-light;
-    opacity: 75;
+    opacity: .7;
     height: 40rem;
 
     &__text {
@@ -27,7 +27,32 @@
     background-position: cover;
     background-size: cover;
     background-color: $color-primary-light;
-    opacity: 75;
+    opacity: .7;
+    height: 40rem;
+
+    &__text {
+        font-size: 7rem;
+        margin-top: 15rem;
+
+
+        @include media-breakpoint-down(sm) {
+            font-size: 4rem;
+            margin-top: 15rem;
+        }
+
+    }
+}
+
+
+
+
+.top-banner__contact {
+    background-image: url("../images/ace-contact-banner.jpg"); 
+    background-attachment: fixed;
+    background-position: cover;
+    background-size: cover;
+    background-color: $color-primary-light;
+    opacity: .7;
     height: 40rem;
 
     &__text {
