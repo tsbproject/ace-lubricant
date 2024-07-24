@@ -1136,7 +1136,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .section-testimony {
-    height: 220vh;
+    height: 340vh;
     position: relative;
     padding: 15rem 0;
     margin-top: 3rem;
@@ -1162,6 +1162,7 @@ body {
   .section-book {
     background-image: linear-gradient(to right bottom, #cfe8aa, #006837);
     padding: 10rem 0;
+    margin-top: 10rem;
   }
 }
 

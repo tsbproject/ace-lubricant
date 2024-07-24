@@ -71,7 +71,7 @@
     margin-top: -10rem;
 
    @include media-breakpoint-down(sm) {
-       height: 220vh;
+       height: 340vh;
         position: relative;
         padding: 15rem 0;
         margin-top: 3rem;
@@ -113,6 +113,7 @@
     background-image:linear-gradient(to right bottom, $color-primary-light, 
     $color-primary) ;
       padding: 10rem 0;
+      margin-top: 10rem;
       
    }
 }
@@ -134,7 +135,9 @@
     // height: 75rem;
 
     @include media-breakpoint-down(sm) {
-        // height: 120rem;
+        // height: 120vh;
+        // margin-top: 25rem;
+        
      }
 
     &__form {
