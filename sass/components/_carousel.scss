@@ -2,12 +2,9 @@
 .carousel-indicators {
 margin-bottom: 28rem;
 
-@include media-breakpoint-down(sm) {
-  margin-bottom: 18rem;
-}
 
-@include media-breakpoint-down(md) {
-  margin-bottom: 18rem;
+@include media-breakpoint-down(xl) {
+  margin-bottom: 13rem;
 }
 
 @include media-breakpoint-down(lg) {
@@ -15,9 +12,18 @@ margin-bottom: 28rem;
 }
 
 
-@include media-breakpoint-down(xl) {
-  margin-bottom: 13rem;
+@include media-breakpoint-down(md) {
+  margin-bottom: 18rem;
 }
+
+@include media-breakpoint-down(sm) {
+  margin-bottom: 18rem;
+}
+
+
+
+
+
 
 
 
@@ -105,13 +111,13 @@ margin-bottom: 28rem;
   // transform: translate(-50%, -50%);
   text-align: center;
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(lg) {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: -50%;
-    bottom: 50%;
     right: -50%;
-    transform: translate(0%, -20%);
+    bottom: 100%;
+    // transform: translate(-50%, -50%);
     text-align: center;
   }
 
@@ -125,15 +131,21 @@ margin-bottom: 28rem;
     text-align: center;
   }
 
-
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(sm) {
     position: absolute;
-    top: 100%;
+    top: 80%;
     left: -50%;
+    bottom: 50%;
     right: -50%;
-    // transform: translate(-50%, -50%);
+    transform: translate(0%, -20%);
     text-align: center;
   }
+
+
+  
+
+
+  
 
 
   
@@ -146,14 +158,17 @@ margin-bottom: 28rem;
     font-size: $heading-primary-font-main;
     color: $color-primary-light;
 
+
+    @include media-breakpoint-down(md) {
+      font-size: $heading-secondary-font;
+    }
+
+
      @include media-breakpoint-down(sm) {
        font-size: 4rem;
      }
 
-     @include media-breakpoint-down(md) {
-      font-size: $heading-secondary-font;
-    }
-
+    
    
 
 
@@ -164,23 +179,18 @@ margin-bottom: 28rem;
   &__description {
     font-family: "Lora" serif ;
     font-size: 3rem;
+
+
+
     
-
-    @include media-breakpoint-down(sm) {
-      font-size: $default-font-size;
-      
-
-      
-
-    }
-
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(xl) {
       font-size: 1.5rem;
       
 
       
 
     }
+
 
     @include media-breakpoint-down(lg) {
       font-size: 1.5rem;
@@ -191,13 +201,28 @@ margin-bottom: 28rem;
     }
 
 
-    @include media-breakpoint-down(xl) {
+    @include media-breakpoint-down(md) {
       font-size: 1.5rem;
       
 
       
 
     }
+    
+
+    @include media-breakpoint-down(sm) {
+      font-size: $default-font-size;
+      
+
+      
+
+    }
+
+   
+
+  
+
+
 
 
    

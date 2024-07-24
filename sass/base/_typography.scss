@@ -119,13 +119,22 @@ body {
 .section-about {
 
     &__photo {
+        max-width: 100%;
         border: 1px solid;
         border-radius: 2rem;
         border-width: 1rem;
         border-color: $color-primary-light;
    
     
+        @include media-breakpoint-down(lg) {
+            max-width:120%;
+            margin-top:20rem;
+            
+        }
+        
         @include media-breakpoint-down(sm) {
+            max-width: 100%;
+            height: auto;
             border: solid;
             border-radius: 2rem;
             border-width: .2rem;
@@ -133,9 +142,7 @@ body {
             outline: 2rem;
         }
     
-        @include media-breakpoint-down(md) {
-            
-        }
+       
     
         
     

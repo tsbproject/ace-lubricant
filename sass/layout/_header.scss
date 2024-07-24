@@ -78,14 +78,15 @@
   padding: 1rem 5rem;
   height: 3rem;
 
-    @include media-breakpoint-down(sm) {
 
-      padding: 1rem 5rem;
-      font-size: 2rem;
-     
-      position: absolute;
-      bottom: 2rem;
-      right: 4rem;
+  @include media-breakpoint-down(lg) {
+
+    padding: 1rem 5rem;
+    font-size: 2rem;
+   
+    position: absolute;
+    bottom: 2rem;
+    right: 4rem;
   }
 
   @include media-breakpoint-down(md) {
@@ -98,15 +99,19 @@
     right: 4rem;
 }
 
-@include media-breakpoint-down(lg) {
 
-  padding: 1rem 5rem;
-  font-size: 2rem;
+    @include media-breakpoint-down(sm) {
+
+      padding: 1rem 5rem;
+      font-size: 2rem;
+     
+      position: absolute;
+      bottom: 2rem;
+      right: 4rem;
+  }
+
  
-  position: absolute;
-  bottom: 2rem;
-  right: 4rem;
-}
+
 
 
 
