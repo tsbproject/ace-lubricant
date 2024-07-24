@@ -1,0 +1,61 @@
+.card {
+    max-width: 100%;
+    height: auto;
+
+    &__img {
+        position: relative;
+        left: 40rem;
+        
+        width: 50rem;
+        border: .5rem solid;
+        border-radius: 4rem;
+        border-width: 1rem;
+        border-color: $color-primary-deep;
+
+        @include media-breakpoint-down(xl) {
+            max-width: 100%;
+            position: relative;
+            left: 22rem;
+
+            
+        }
+
+        @include media-breakpoint-down(lg) {
+            max-width: 100%;
+            position: relative;
+            left: 10rem;
+
+            
+        }
+
+
+        @include media-breakpoint-down(md) {
+            max-width: 100%;
+            position: relative;
+            left: 0;
+
+            
+        }
+         
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+            position: relative;
+            left: 0;
+
+            border: .5rem solid;
+            border-radius: 2rem;
+            border-width: .5rem;
+
+            
+        }
+         
+    }
+
+
+    &__title {
+        font-size: $heading-tertiary-font;
+        text-transform: uppercase;
+    }
+
+
+}

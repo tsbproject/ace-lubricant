@@ -211,8 +211,13 @@ body {
 .profile {
 
     &__img {
+        max-width: 100%;
         border-radius: 2rem;
         border: .3rem solid  $color-primary-light;
+
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+        }
     }
 }
 
