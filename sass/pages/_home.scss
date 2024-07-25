@@ -73,9 +73,9 @@
     } //section-features > * {}
     
     @include media-breakpoint-down(sm) {
-        height: 440vh;
+        height: 430vh;
         margin-top: 10rem;
-        margin-bottom: -2rem;
+        margin-bottom: 10rem;
         background-color: $color-primary-light;
 
     }
@@ -90,7 +90,7 @@
     margin-top: -10rem;
 
    @include media-breakpoint-down(sm) {
-       height: 340vh;
+       height: 320vh;
         position: relative;
         padding: 15rem 0;
         margin-top: 3rem;
@@ -182,9 +182,4 @@
     
 }
 
-.company-profile-heading {
 
-    
-
-
-}

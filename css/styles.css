@@ -482,8 +482,6 @@ body {
 }
 .carousel-caption__btn {
   position: absolute;
-  bottom: 5%;
-  left: 2%;
   animation: 4s moveInBottom ease-out;
 }
 @media (max-width: 575.98px) {
@@ -742,23 +740,23 @@ body {
   transform: skewX(-12deg);
   margin-bottom: 10rem;
 }
-@media (max-width: 575.98px) {
-  .testimony {
-    width: 100%;
-    margin: 0 auto;
-    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-    background-color: rgba(4, 77, 43, 0.6);
-    padding: 6rem;
-    padding-left: 2rem;
-    font-size: 1.7rem;
-    transform: skewX(0deg);
-    margin-bottom: 10rem;
-  }
-}
 @media (max-width: 767.98px) {
   .testimony {
     width: 15h;
     padding: 6rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .testimony {
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(4, 77, 43, 0.6);
+    padding: 5rem;
+    padding-left: 6rem;
+    font-size: 1.7rem;
+    transform: skewX(0deg);
+    margin-bottom: 10rem;
   }
 }
 .testimony:not(:last-child) {
@@ -1300,9 +1298,9 @@ body {
 }
 @media (max-width: 575.98px) {
   .section-features {
-    height: 440vh;
+    height: 430vh;
     margin-top: 10rem;
-    margin-bottom: -2rem;
+    margin-bottom: 10rem;
     background-color: #cfe8aa;
   }
 }
@@ -1314,7 +1312,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .section-testimony {
-    height: 340vh;
+    height: 320vh;
     position: relative;
     padding: 15rem 0;
     margin-top: 3rem;
