@@ -124,6 +124,7 @@ body {
         border-radius: 2rem;
         border-width: 1rem;
         border-color: $color-primary-light;
+        animation: fadeInDown  2s ease-out;
    
     
         @include media-breakpoint-down(lg) {
@@ -161,6 +162,7 @@ body {
         text-transform: uppercase;
         color: $color-primary;
         margin-left: 2rem;
+        animation: fadeInDown  2s ease-out;
 
         @include media-breakpoint-down(sm) {
         font-size:$heading-tertiary-font;
@@ -179,6 +181,7 @@ body {
     &__paragraph {
         font-size:$default-font-size;
         color: $color-primary-black;
+        animation: fadeInDown  2s ease-out;
     }
 
     &__heading-tertiary {
@@ -186,6 +189,7 @@ body {
         color: $color-primary;
         font-weight: 500;
         text-transform: uppercase;
+        animation: fadeInDown  2s ease-out;
     }
 
     &__portfolio {
@@ -214,6 +218,7 @@ body {
         max-width: 100%;
         border-radius: 2rem;
         border: .3rem solid  $color-primary-light;
+        animation: fadeInDown  2s ease-out;
 
         @include media-breakpoint-down(sm) {
             max-width: 100%;

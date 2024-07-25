@@ -6,6 +6,7 @@
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.9rem 4rem rgba($color-primary-black, .15);
+    animation: fadeInDown  2s ease-out;
 
     @include media-breakpoint-down(sm) {
         padding: 5rem;
