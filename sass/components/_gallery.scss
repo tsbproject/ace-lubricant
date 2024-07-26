@@ -1,0 +1,24 @@
+.album {
+    padding: 20px;
+  }
+  .album .col {
+    padding: 10px;
+  }
+  .album img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+
+
+
+  .gallery-heading1 {
+    color: $color-primary;
+    margin-top: 30rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size:3rem;
+    }
+
+  }

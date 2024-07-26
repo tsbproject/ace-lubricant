@@ -198,6 +198,17 @@ body {
 }
 
 
+.vision-mission {
+    height: 35rem;
+    background-color: $color-primary-light;
+
+    @include media-breakpoint-down(sm) {
+        height:70rem;
+    } 
+    
+}
+
+
 .vision {
     text-align: center;
 
@@ -223,6 +234,67 @@ body {
         @include media-breakpoint-down(sm) {
             max-width: 100%;
         }
+    }
+}
+
+
+
+
+.contact {
+    background-image:linear-gradient( 105deg, 
+    rgba($color-primary-light, 10),
+    rgba($color-secondary-white, .9) 20%,
+    
+    transparent 70%), 
+    
+    
+    url(../images/ace-contact.jpg);
+    background-size: auto; // or 100% value
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
+
+    // height: 75rem;
+
+    @include media-breakpoint-down(sm) {
+        // height: 120vh;
+        // margin-top: 25rem;
+        
+     }
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+        @include media-breakpoint-down(sm) {
+            width: 65%;
+            padding: 3rem;
+    
+         }
+    }
+}
+
+.contact-info {
+    
+    &__header {
+
+        font-size: 2rem;
+
+    }
+
+    &__text {
+
+        @include media-breakpoint-down(lg) {
+            font-size: 1.2rem;
+           
+        }
+
+    }
+
+
+    &__icon {
+        font-size: 4rem;
+        color: $color-primary-deep;
     }
 }
 

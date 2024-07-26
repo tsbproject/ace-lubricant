@@ -195,6 +195,16 @@ body {
   font-size: 1.5rem;
 }
 
+.vision-mission {
+  height: 35rem;
+  background-color: #cfe8aa;
+}
+@media (max-width: 575.98px) {
+  .vision-mission {
+    height: 70rem;
+  }
+}
+
 .vision {
   text-align: center;
   padding: 3rem 0;
@@ -213,6 +223,37 @@ body {
   .profile__img {
     max-width: 100%;
   }
+}
+
+.contact {
+  background-image: linear-gradient(105deg, #cfe8aa, rgba(255, 255, 255, 0.9) 20%, transparent 70%), url(../images/ace-contact.jpg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+}
+.contact__form {
+  width: 50%;
+  padding: 6rem;
+}
+@media (max-width: 575.98px) {
+  .contact__form {
+    width: 65%;
+    padding: 3rem;
+  }
+}
+
+.contact-info__header {
+  font-size: 2rem;
+}
+@media (max-width: 991.98px) {
+  .contact-info__text {
+    font-size: 1.2rem;
+  }
+}
+.contact-info__icon {
+  font-size: 4rem;
+  color: #044d2b;
 }
 
 .u-center-text {
@@ -843,6 +884,30 @@ body {
   }
 }
 
+.album {
+  padding: 20px;
+}
+
+.album .col {
+  padding: 10px;
+}
+
+.album img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.gallery-heading1 {
+  color: #006837;
+  margin-top: 30rem;
+}
+@media (max-width: 575.98px) {
+  .gallery-heading1 {
+    font-size: 3rem;
+  }
+}
+
 .nav__navbar-nav {
   list-style: none;
   display: inline-flex;
@@ -1336,30 +1401,31 @@ body {
   }
 }
 
-.section-book {
+.section-front-contact {
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #cfe8aa, #006837);
 }
 @media (max-width: 575.98px) {
-  .section-book {
+  .section-front-contact {
     background-image: linear-gradient(to right bottom, #cfe8aa, #006837);
     padding: 10rem 0;
     margin-top: 10rem;
   }
 }
 
-.book {
-  background-image: linear-gradient(105deg, #cfe8aa, rgba(255, 255, 255, 0.9) 50%, transparent 20%), url(../images/ace4.jpg);
+.front-contact {
+  background-image: linear-gradient(105deg, #cfe8aa, rgba(255, 255, 255, 0.9) 70%, transparent 20%), url(../images/ace4.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
-.book__form {
+.front-contact__form {
   width: 50%;
   padding: 6rem;
 }
 @media (max-width: 575.98px) {
-  .book__form {
+  .front-contact__form {
     width: 65%;
     padding: 3rem;
   }
@@ -1374,33 +1440,6 @@ body {
     background-image: linear-gradient(to right bottom, #cfe8aa, #006837);
     padding: 10rem 0;
     margin-top: 10rem;
-  }
-}
-
-.contact {
-  background-image: linear-gradient(105deg, #cfe8aa, rgba(255, 255, 255, 0.9) 50%, transparent 20%), url(../images/ace-contact.jpg);
-  background-size: auto;
-  border-radius: 3px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-}
-.contact__form {
-  width: 50%;
-  padding: 6rem;
-}
-@media (max-width: 575.98px) {
-  .contact__form {
-    width: 65%;
-    padding: 3rem;
-  }
-}
-
-.vision-mission {
-  height: 35rem;
-  background-color: #cfe8aa;
-}
-@media (max-width: 575.98px) {
-  .vision-mission {
-    height: 70rem;
   }
 }
 
