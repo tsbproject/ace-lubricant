@@ -256,6 +256,26 @@ body {
   color: #044d2b;
 }
 
+.section-products {
+  height: 100vh;
+  margin-bottom: 13rem;
+  padding: 5rem 0;
+}
+
+.product {
+  padding: 10rem 0;
+  margin-bottom: 25rem;
+}
+@media (max-width: 575.98px) {
+  .product__header {
+    font-size: 2rem;
+  }
+}
+.product__img {
+  max-width: 35%;
+  height: auto;
+}
+
 .u-center-text {
   text-align: center !important;
 }

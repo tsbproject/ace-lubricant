@@ -301,7 +301,28 @@ body {
 
 
 
+.section-products {
+    height: 100vh;
+    margin-bottom: 13rem;
+    padding: 5rem 0;
+}
 
+
+.product {
+    padding:10rem 0;
+    margin-bottom:25rem;
+
+    &__header {
+        @include media-breakpoint-down(sm) {
+            font-size: 2rem;
+        }
+    }
+
+    &__img {
+        max-width: 35%;
+        height: auto;
+    }
+}
     
         
     
