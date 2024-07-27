@@ -207,6 +207,7 @@ body {
 
 .company-profile {
   border-bottom: 1rem solid #cfe8aa;
+  border-style: double;
 }
 
 .vision {
