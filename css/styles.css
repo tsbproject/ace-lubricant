@@ -205,9 +205,18 @@ body {
   }
 }
 
+.company-profile {
+  border-bottom: 1rem solid #cfe8aa;
+}
+
 .vision {
   text-align: center;
-  padding: 3rem 0;
+  border-bottom: 0.1rem solid #000000;
+  border-radius: 3rem;
+  border-style: groove;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  margin: 1rem;
 }
 .vision__heading {
   text-align: center;
@@ -223,6 +232,10 @@ body {
   .profile__img {
     max-width: 100%;
   }
+}
+
+.company-products__strong {
+  text-transform: uppercase;
 }
 
 .contact {
@@ -257,23 +270,85 @@ body {
 }
 
 .section-products {
-  height: 100vh;
-  margin-bottom: 13rem;
-  padding: 5rem 0;
+  margin-bottom: 5rem;
+  padding: 5rem 0 5rem;
+}
+@media (max-width: 1199.98px) {
+  .section-products {
+    margin-bottom: 5rem;
+    padding: 5rem 0 7rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .section-products {
+    margin-bottom: 5rem;
+    padding: 5rem 0 7rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .section-products {
+    margin-bottom: 5rem;
+    padding: 5rem 0 7rem;
+  }
 }
 
 .product {
-  padding: 10rem 0;
-  margin-bottom: 25rem;
+  padding: 10rem 0 10rem;
+  margin-bottom: 5rem;
+  animation: fadeInDown 2s ease-out;
+}
+@media (max-width: 1199.98px) {
+  .product {
+    margin-bottom: 2rem;
+    padding: 5rem 0 10rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .product {
+    margin-bottom: 2rem;
+    padding: 5rem 0 10rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .product {
+    margin-bottom: 2rem;
+    padding: 5rem 0 10rem;
+  }
+}
+.product__header {
+  letter-spacing: 2rem;
+  border-bottom: 0.1rem solid;
+  background-color: #cfe8aa;
 }
 @media (max-width: 575.98px) {
   .product__header {
     font-size: 2rem;
   }
 }
+.product__details {
+  font-size: 2rem;
+}
 .product__img {
-  max-width: 35%;
+  max-width: 100%;
   height: auto;
+}
+@media (max-width: 1199.98px) {
+  .product__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 991.98px) {
+  .product__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 575.98px) {
+  .product__img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .u-center-text {
@@ -984,7 +1059,7 @@ body {
 @media (max-width: 575.98px) {
   .nav__link {
     position: relative;
-    left: -1rem;
+    left: -5rem;
   }
 }
 
@@ -1019,12 +1094,12 @@ body {
     font-size: 1rem;
     height: 30rem;
     width: 20rem;
-    margin-left: 3rem;
+    margin-left: 5rem;
   }
 }
 @media (max-width: 575.98px) {
   .dropdown-menu {
-    font-size: 1rem;
+    font-size: 1.3rem;
     height: 30rem;
     width: 20rem;
     margin-left: -3rem;
@@ -1041,10 +1116,10 @@ body {
 }
 @media (max-width: 575.98px) {
   .about-dropdowm {
-    font-size: 1rem;
+    font-size: 1.3rem;
     height: 30rem;
     width: 20rem;
-    margin-left: -3rem;
+    margin-left: -5rem;
   }
 }
 
@@ -1179,6 +1254,7 @@ body {
 }
 .top-banner__text {
   font-size: 7rem;
+  text-transform: uppercase;
   margin-top: 15rem;
 }
 @media (max-width: 575.98px) {
@@ -1199,6 +1275,7 @@ body {
 }
 .top-banner__team__text {
   font-size: 7rem;
+  text-transform: uppercase;
   margin-top: 15rem;
 }
 @media (max-width: 575.98px) {
@@ -1219,6 +1296,7 @@ body {
 }
 .top-banner__contact__text {
   font-size: 7rem;
+  text-transform: uppercase;
   margin-top: 15rem;
 }
 @media (max-width: 575.98px) {

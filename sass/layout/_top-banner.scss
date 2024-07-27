@@ -9,6 +9,7 @@
 
     &__text {
         font-size: 7rem;
+        text-transform: uppercase;
         margin-top: 15rem;
 
 
@@ -32,6 +33,7 @@
 
     &__text {
         font-size: 7rem;
+        text-transform: uppercase;
         margin-top: 15rem;
 
 
@@ -57,7 +59,9 @@
 
     &__text {
         font-size: 7rem;
+        text-transform: uppercase;
         margin-top: 15rem;
+        
 
 
         @include media-breakpoint-down(sm) {

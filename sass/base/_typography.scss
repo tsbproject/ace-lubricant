@@ -208,11 +208,20 @@ body {
     
 }
 
+.company-profile {
+    border-bottom: 1rem solid rgba($color-primary-light, 10);
+}
+
 
 .vision {
     text-align: center;
+    border-bottom : .1rem solid $color-primary-black;
+    border-radius: 3rem;
+    border-style: groove;
+    background-color: rgba($color-secondary-white, .9);
+    padding: 2rem;
+    margin: 1rem;
 
-    padding: 3rem 0;
 
     &__heading {
         text-align: center;
@@ -234,6 +243,13 @@ body {
         @include media-breakpoint-down(sm) {
             max-width: 100%;
         }
+    }
+}
+
+.company-products {
+
+    &__strong {
+        text-transform: uppercase;
     }
 }
 
@@ -302,25 +318,82 @@ body {
 
 
 .section-products {
-    height: 100vh;
-    margin-bottom: 13rem;
-    padding: 5rem 0;
+  
+    margin-bottom: 5rem;
+    padding: 5rem 0 5rem;
+
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 5rem;
+        padding: 5rem 0 7rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 5rem;
+        padding: 5rem 0 7rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 5rem;
+        padding: 5rem 0 7rem;
+    }
 }
 
 
 .product {
-    padding:10rem 0;
-    margin-bottom:25rem;
+    padding:10rem 0 10rem;
+    margin-bottom:5rem;
+
+    animation: fadeInDown 2s ease-out;
+
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 2rem;
+        padding:5rem 0 10rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 2rem;
+        padding:5rem 0 10rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 2rem;
+        padding:5rem 0 10rem;
+    }
 
     &__header {
+        letter-spacing: 2rem;
+        border-bottom: .1rem solid ;
+        background-color: $color-primary-light;
         @include media-breakpoint-down(sm) {
             font-size: 2rem;
+        
         }
     }
 
+    &__details {
+        font-size: 2rem;
+       
+    }
+
     &__img {
-        max-width: 35%;
+        max-width: 100%;
         height: auto;
+
+        
+        @include media-breakpoint-down(xl) {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @include media-breakpoint-down(lg) {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+            height: auto;
+        }
     }
 }
     
