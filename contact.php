@@ -157,7 +157,7 @@
   <i class="bi bi-arrow-up"></i> <!-- Bootstrap Icons -->
 </button>
 
-<?php include 'footer.php';?>
+<?php require 'footer.php';?>
 
 
 
