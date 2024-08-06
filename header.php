@@ -63,7 +63,7 @@
         <ul class="nav__navbar-nav justify-content-center flex-grow-1 pe-3 ms-auto">
          
           <li class="nav__item">
-            <a  id="navlink"  class="nav__link active" aria-current="page" href="index.html">Home</a>
+            <a  id="navlink"  class="nav__link active" aria-current="page" href="index.php">Home</a>
         </li>
 
 
@@ -72,9 +72,9 @@
               Who we are
           </a>
           <ul class="dropdown-menu about-dropdowm" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="about.html">Company profile</a></li>
+              <li><a class="dropdown-item" href="about.php">Company profile</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="team.html">Our team</a></li>
+              <li><a class="dropdown-item" href="team.php">Our team</a></li>
               <li><hr class="dropdown-divider"></li>
               <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
           </ul>
@@ -87,26 +87,26 @@
                 Our products
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="ace-sprint.html">ACE SPRINT SAE 40</a></li>
+                <li><a class="dropdown-item" href="ace-sprint.php">ACE SPRINT SAE 40</a></li>
                 <li><hr class="dropdown-divider"></li>
                 
-                <li><a class="dropdown-item" href="ace-superhd.html">ACE SUPER HD 50 4L</a></li>
+                <li><a class="dropdown-item" href="ace-superhd.php">ACE SUPER HD 50 4L</a></li>
                 <li><hr class="dropdown-divider"></li>
                 
-                <li><a class="dropdown-item" href="ace-plus.html">ACE PLUS 20W 50</a></li>
+                <li><a class="dropdown-item" href="ace-plus.php">ACE PLUS 20W 50</a></li>
                 <li><hr class="dropdown-divider"></li>
 
-                <li><a class="dropdown-item" href="ace-atfdextron.html">ACE ATF DEXTRON II</a></li>
+                <li><a class="dropdown-item" href="ace-atfdextron.php">ACE ATF DEXTRON II</a></li>
                 <li><hr class="dropdown-divider"></li>
 
-                <li><a class="dropdown-item" href="ace-hydraulicoil.html">AH 68 HYDRAULIC OIL</a></li>
+                <li><a class="dropdown-item" href="ace-hydraulicoil.php">AH 68 HYDRAULIC OIL</a></li>
                 <li><hr class="dropdown-divider"></li>
 
 
-                <li><a class="dropdown-item" href="ace-speedmax.html">  ACE SPEEDMAX 85W 140</a></li>
+                <li><a class="dropdown-item" href="ace-speedmax.php">  ACE SPEEDMAX 85W 140</a></li>
                 <li><hr class="dropdown-divider"></li>
 
-                <li><a class="dropdown-item" href="ace-vulcan.html"> ACE VULCAN 15 W40</a></li>
+                <li><a class="dropdown-item" href="ace-vulcan.php"> ACE VULCAN 15 W40</a></li>
                 <li><hr class="dropdown-divider"></li>
 
 
@@ -117,11 +117,11 @@
             </ul>
         </li>
         <li class="nav__item">
-            <a  id="navlink"  class="nav__link" href="photo-gallery.html">Gallery</a>
+            <a  id="navlink"  class="nav__link" href="photo-gallery.php">Gallery</a>
         </li>
         
         <li class="nav__item">
-            <a  id="navlink"  class="nav__link" href="contact.html">Contact us</a>
+            <a  id="navlink"  class="nav__link" href="contact.php">Contact us</a>
         </li>
     </ul>
           

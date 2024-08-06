@@ -19,14 +19,24 @@
 .section-about {
     // height: 12vh;
     padding: 40rem 0;
-    margin-top: 25rem;
-    margin-bottom: 26rem;
+    margin-top: 30rem;
+    margin-bottom: 20rem;
     // background-color: $color-primary-light;
     
+    
+    @include media-breakpoint-down(xl) {
+        height: 70vh;
+        padding: 30rem 0;
+        margin-top: 120rem;
+        margin-bottom: 7rem;
+    }
+
+    
+    
     @include media-breakpoint-down(lg) {
-        height: 11vh;
+        height: 60vh;
         padding: 5rem 0;
-        margin-top: 23rem;
+        margin-top: 36rem;
         margin-bottom: 35rem;
     }
 
@@ -42,8 +52,8 @@
     @include media-breakpoint-down(sm) {
         height: 280vh;
         padding: 8rem 0;
-        margin-top: 10rem;
-        margin-bottom: -50rem;
+        margin-top: -12rem;
+        margin-bottom: -40rem;
     }
 
     
@@ -71,6 +81,24 @@
     &> * {
         transform: skewY(7deg);
     } //section-features > * {}
+
+    @include media-breakpoint-down(xl) {
+        height: 60vh;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        background-color: $color-primary-light;
+
+    }
+    
+    
+    @include media-breakpoint-down(lg) {
+        height: 140vh;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        background-color: $color-primary-light;
+
+    }
+   
     
     @include media-breakpoint-down(sm) {
         height: 430vh;
@@ -90,10 +118,10 @@
     margin-top: -10rem;
 
    @include media-breakpoint-down(sm) {
-       height: 320vh;
+        height: 300vh;
         position: relative;
         padding: 15rem 0;
-        margin-top: 3rem;
+        margin-top: 1.5rem;
         
       
     }
@@ -123,31 +151,32 @@
 
 }
 
-.section-front-contact {
-    padding: 15rem 0;
-    background-image:linear-gradient(to right bottom, $color-primary-light, 
-    $color-primary) ;
+// .section-front-contact {
+//     padding: 15rem 0;
+//     background-image:linear-gradient(to right bottom, $color-primary-light, 
+//     $color-primary) ;
 
-   @include media-breakpoint-down(sm) {
-    background-image:linear-gradient(to right bottom, $color-primary-light, 
-    $color-primary) ;
-      padding: 10rem 0;
-      margin-top: 10rem;
+//    @include media-breakpoint-down(sm) {
+//     background-image:linear-gradient(to right bottom, $color-primary-light, 
+//     $color-primary) ;
+//       padding: 10rem 0;
+//       margin-top: 10rem;
       
-   }
-}
+//    }
+// }
 
 
 
 .front-contact {
     background-image:linear-gradient( 105deg, 
     rgba($color-primary-light, 10),
-    rgba($color-secondary-white, .9) 70%,
+    rgba($color-secondary-white, .1) 20%,
     
-    transparent 20%), 
+    transparent 70%), 
     
-    url(../images/ace4.jpg);
-    background-size: cover; // or 100% value
+    url(../images/ace-contact.jpg);
+    background-size: auto; // or 100% value
+    background-position: 100%;
     background-repeat: no-repeat;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
@@ -155,39 +184,61 @@
     // height: 75rem;
 
     @include media-breakpoint-down(sm) {
+        background-image:linear-gradient( 105deg, 
+    rgba($color-primary-light, 10),
+    rgba($color-secondary-white, .1) 70%,
+    
+    transparent 70%), 
+    
+    url(../images/ace-contact.jpg);
+    background-size: auto; // or 100% value
+    background-position: 100%;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
         // height: 120vh;
         // margin-top: 25rem;
         
      }
 
     &__form {
-        width: 50%;
-        padding: 6rem;
+        width: 80%;
+        padding: 2rem;
 
         @include media-breakpoint-down(sm) {
-            width: 65%;
-            padding: 3rem;
+            width: 100%;
+            padding: 1rem;
     
          }
     }
+
+
+    &__textarea {
+        
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
+
+   
 }
 
 
 
 
-.section-contact {
-    padding: 15rem 0;
-    background-image:linear-gradient(to right bottom, $color-primary-light, 
-    $color-primary) ;
+// .section-contact {
+//     padding: 15rem 0;
+//     background-image:linear-gradient(to right bottom, $color-primary-light, 
+//     $color-primary) ;
 
-   @include media-breakpoint-down(sm) {
-    background-image:linear-gradient(to right bottom, $color-primary-light, 
-    $color-primary) ;
-      padding: 10rem 0;
-      margin-top: 10rem;
+//    @include media-breakpoint-down(sm) {
+//     background-image:linear-gradient(to right bottom, $color-primary-light, 
+//     $color-primary) ;
+//       padding: 10rem 0;
+//       margin-top: 10rem;
       
-   }
-}
+//    }
+// }
 
 
 

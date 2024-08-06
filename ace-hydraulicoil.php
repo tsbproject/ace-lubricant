@@ -66,10 +66,12 @@
                    duty engine and hydraulic machines.
                   
                 </p>
+                <a href="ace-speedmax.php" class="btn-text btn--product">NEXT PRODUCT &rarr;</a>
               </div>
             </div>
           </div>
          </div>
+        
     </section> 
     </main>
 

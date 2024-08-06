@@ -95,6 +95,16 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
+
+       
+    }
+
+
+    &__textarea {
+
+        @include media-breakpoint-down(sm) {
+            width: 90%;
+        }
     }
 
    
@@ -194,4 +204,30 @@
 }
 
 
+.success.mg {
+    font-size: 1.5rem;
+    color: white;
+    background-color: green;
+}
 
+
+
+
+
+.g-recaptcha {
+    margin-bottom: 10rem;
+    height: 3rem;
+
+    
+}
+
+// iframe {
+  
+//     @include media-breakpoint-down(sm) {
+//         width: 240px;
+//         // height: px;
+//     }
+// }
+
+
+   

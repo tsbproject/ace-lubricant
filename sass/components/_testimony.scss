@@ -12,6 +12,26 @@
     margin-bottom: 10rem;
 
     
+    
+    @include media-breakpoint-down(xl) {
+        width: 5h;
+        padding: 3rem 14rem;
+        transform: skewX(-5deg);
+        margin-bottom: 10rem;
+    }
+   
+    
+    
+    
+    @include media-breakpoint-down(lg) {
+        width: 5h;
+        padding: 3rem 14rem;
+        transform: skewX(-5deg);
+        margin-bottom: 10rem;
+    }
+   
+    
+    
     @include media-breakpoint-down(md) {
         width: 15h;
         padding: 6rem;

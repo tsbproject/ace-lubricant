@@ -67,12 +67,14 @@
                    and differentials in automobiles, trucks and other machinery.
                   
                 </p>
+                <a href="ace-vulcan.php" class="btn-text btn--product">NEXT PRODUCT &rarr;</a>
               </div>
             </div>
           </div>
          </div>
+        
     </section> 
-
+     
     </main>
 
   

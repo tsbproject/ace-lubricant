@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +16,8 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!----------------------------------Custom CSS------------------------------->
      <link rel="stylesheet" href="css/icon-font.css"> 
@@ -63,7 +69,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/ace3.jpg" class="d-block w-100  carousel__img img-fluid" alt="slide3">
+                        <img src="images/ace7.jpg" class="d-block w-100  carousel__img img-fluid" alt="slide3">
                         <div class="carousel-caption d-md-block">
                             <h1 class="carousel-caption__header">ACE LUBRICANTS</h1>
                             <p class="carousel-caption__description">provide superior lubrication and protection<br> in various applications.</p>
@@ -106,7 +112,7 @@
                    
                     </p>
 
-                    <a href="#" class="btn-text">Learn more &rarr;</a>
+                    <a href="about.php" class="btn-text">Learn more &rarr;</a>
           </div>
           <div class="col-sm-6"> 
             <div class="composition">
@@ -122,9 +128,9 @@
 
     <section class="section-features">
       <div class="container">
-        <div class="row g-5">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-5">
           
-          <div class="col-md-3 col-sm-3">
+          <div class="col">
             <div class="feature-box">
              <img src="images/product1.png" alt="feature-box-image" class="feature-box__products">
               <h3 class="feature-box__heading">ACE PLUS 20W 50 4l</h3>
@@ -132,7 +138,7 @@
             </div> 
           </div>
           
-          <div class="col-md-3 col-sm-3">
+          <div class="col">
             <div class="feature-box">
               <img src="images/product2.png" alt="feature-box-image" class="feature-box__products">
                <h3 class="feature-box__heading">SUPER HD 50 4L</h3>
@@ -140,7 +146,7 @@
              </div> 
           </div>
           
-          <div class="col-md-3 col-sm-3">
+          <div class="col">
             <div class="feature-box">
               <img src="images/product3.png" alt="feature-box-image" class="feature-box__products">
                <h3 class="feature-box__heading u-margin-top-small">sprint sae 40 4L</h3>
@@ -148,7 +154,7 @@
              </div> 
           </div>
          
-          <div class="col-md-3 col-sm-3">
+          <div class="col">
             <div class="feature-box">
               <img src="images/product4.png" alt="feature-box-image" class="feature-box__products">
                <h3 class="feature-box__heading">SUPER HD sae 50 25L</h3>
@@ -204,10 +210,7 @@
                 </p>
            </div>
         </div>
-
-
-        
-    </div>
+      </div>
 
 
 
@@ -231,21 +234,10 @@
                       and reduced wear and tear on our machines. I highly recommend 
                       Ace Lubricants to anyone looking for top-notch industrial lubricants.  
                 </p>
+                <!-- <a href="testimonies.html" class="btn btn-text  section-testimony__btn ">Read All stories &rarr;</a> -->
            </div>
         </div>
-
-
-        
-    </div>
-
-
-    
-
-    <div class="u-center-text u-margin-top-huge ">
-        <a href="testimonies.html" class="btn btn-text  section-testimony__btn ">Read All stories &rarr;</a>
-    </div>
-
-
+      </div>
   </div>
 </section>
 
@@ -254,36 +246,53 @@
     <div class="row">
       <div class="front-contact">
         <div class="front-contact__form">
-            <form action="#" class="form">
+            <form method="post" action="submit_form1.php" class="form">
                 <div class="u-margin-bottom-medium">
                     <h2 class="heading-secondary">
                         Do you have any question about our products?
                     </h2>
                 </div>
+            <?php if (isset($_SESSION['email_message'])): ?>
+                  <div id="success-message" class=" success-msg alert alert-<?php echo $_SESSION['email_message_type']; ?> mt-3">
+                      <?php 
+                      echo $_SESSION['email_message']; 
+                      unset($_SESSION['email_message']);
+                      unset($_SESSION['email_message_type']);
+                      ?>
+                  </div>
+              <?php endif; ?>
+                
                 <div class="form__group">
-                    <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                    <label for="name" class="form__label"> Full Name</label>
+                    <input type="text" class="form__input" placeholder="Full name" id="full_name" name="full_name" required>
+                    <label for="full_name" class="form__label"> Full Name</label>
                 </div>
 
 
                 <div class="form__group">
-                    <input type="email" class="form__input" placeholder="Email" id="email" required>
+                    <input type="email" class="form__input" placeholder="Email" id="email" name="email" required>
                     <label for="email" class="form__label"> Email Address</label>
                 </div>
 
 
                 
                 <div class="form__group">
-                  <input type="phone" class="form__input" placeholder="Phone" id="phone" required>
+                  <input type="phone" class="form__input" placeholder="Phone" id="phone" name="phone" required>
                   <label for="phone" class="form__label"> Telephone</label>
                 </div>
 
                 <div class="form__group">
-                  <textarea class="form__textarea" placeholder="write your message here" id="message" rows="5" required></textarea>
+                  <textarea class="form__textarea" placeholder="write your message here" id="message" name="message" rows="5" required></textarea>
                   <label for="message" class="form__label"> Your Message</label>
+
+                 
               </div>
 
-
+              <div class="form-group" style="display: none;">
+                <label for="website">Website</label>
+                <input type="text" class="form-control" id="website" name="website">
+            </div>
+            
+               <div class="g-recaptcha" data-sitekey="6Le7qx0qAAAAANprlofGZX6dbwlVtvgh75TrRxa0"></div>
 
                     
                    

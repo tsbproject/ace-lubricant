@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +16,8 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!----------------------------------Custom CSS------------------------------->
      <link rel="stylesheet" href="css/icon-font.css"> 
@@ -33,7 +39,7 @@
 
 
 <body>
-  <?php include 'header.php';?>
+  <?php require 'header.php';?>
     
     <main>
 
@@ -98,37 +104,52 @@
         <div class="row">
           <div class="contact">
             <div class="contact__form">
-                <form action="#" class="form">
+                <form method="post" action="submit_form.php" class="form">
                     <div class="u-margin-bottom-medium">
                         <h2 class="heading-secondary">
                             Do you have any question about ace lubricants?
                         </h2>
                     </div>
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                        <label for="name" class="form__label"> Full Name</label>
+
+                    <?php if (isset($_SESSION['email_message'])): ?>
+                    <div id="success-message" class=" success-msg alert alert-<?php echo $_SESSION['email_message_type']; ?> mt-3">
+                        <?php 
+                        echo $_SESSION['email_message']; 
+                        unset($_SESSION['email_message']);
+                        unset($_SESSION['email_message_type']);
+                        ?>
+                    </div>
+                <?php endif; ?>
+                    
+                <div class="form__group">
+                        <input type="text" class="form__input" placeholder="Full name" id="full_name" name="full_name" required>
+                        <label for="full_name" class="form__label"> Full Name</label>
                     </div>
     
     
                     <div class="form__group">
-                        <input type="email" class="form__input" placeholder="Email" id="email" required>
+                        <input type="email" class="form__input" placeholder="Email" id="email" name="email" required>
                         <label for="email" class="form__label"> Email Address</label>
                     </div>
     
     
                     
                     <div class="form__group">
-                      <input type="phone" class="form__input" placeholder="Phone" id="phone" required>
+                      <input type="phone" class="form__input" placeholder="Phone" id="phone" name="phone" required>
                       <label for="phone" class="form__label"> Telephone</label>
                     </div>
     
                     <div class="form__group">
-                      <textarea class="form__textarea" placeholder="write your message here" id="message" rows="5" required></textarea>
+                      <textarea class="form__textarea" placeholder="write your message here" id="message" name="message" rows="5" required></textarea>
                       <label for="message" class="form__label"> Your Message</label>
                   </div>
     
     
-    
+                  <div class="form-group" style="display: none;">
+                <label for="website">Website</label>
+                <input type="text" class="form-control" id="website" name="website">
+                  </div>
+                 <div class="g-recaptcha" data-sitekey="6Le7qx0qAAAAANprlofGZX6dbwlVtvgh75TrRxa0"></div>
                         
                        
                 
@@ -137,14 +158,14 @@
                     </div>
     
                 </form>
+
+               
     
+              </div>
             </div>
-    
           </div>
-        </div>
-    
       </div>
-     </section>
+    </section>
 
   </main>  
 
