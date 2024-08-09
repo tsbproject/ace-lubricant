@@ -1779,9 +1779,16 @@ body {
     margin-top: -20rem;
   }
 }
+@media (max-width: 767.98px) {
+  .section-testimony {
+    height: 220vh;
+    padding: 5rem 1rem;
+    margin-top: 1.5rem;
+  }
+}
 @media (max-width: 575.98px) {
   .section-testimony {
-    height: 280vh;
+    height: 220vh;
     padding: 5rem 1rem;
     margin-top: 1.5rem;
   }
@@ -1933,7 +1940,7 @@ body {
 }
 @media (max-width: 575.98px) {
   .action-call__btn {
-    width: 25rem;
+    width: 20rem;
     margin-left: 3rem;
   }
 }

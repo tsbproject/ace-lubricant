@@ -104,7 +104,7 @@ session_start();
         <div class="row">
           <div class="contact">
             <div class="contact__form">
-                <form method="post" action="submit_form.php" class="form">
+                <form id="contactForm" method="post" action="submit_form.php" class="form">
                     <div class="u-margin-bottom-medium">
                         <h2 class="heading-secondary">
                             Do you have any question about ace lubricants?
@@ -120,6 +120,12 @@ session_start();
                         ?>
                     </div>
                 <?php endif; ?>
+
+                <script type="text/javascript">
+        function onSubmit(token) {
+            document.getElementById("contactForm").submit();
+        }
+    </script>
                     
                 <div class="form__group">
                         <input type="text" class="form__input" placeholder="Full name" id="full_name" name="full_name" required>

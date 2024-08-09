@@ -139,10 +139,17 @@
     }
         
       
-    
+    @include media-breakpoint-down(md) {
+        height: 220vh;
+        padding: 5rem 1rem;
+        margin-top: 1.5rem;
+        
+      
+    }
+
 
    @include media-breakpoint-down(sm) {
-        height: 280vh;
+        height: 220vh;
         padding: 5rem 1rem;
         margin-top: 1.5rem;
         
@@ -345,7 +352,7 @@
         }
 
         @include media-breakpoint-down(sm) {
-            width: 25rem;
+            width: 20rem;
             margin-left: 3rem;
         }
 
