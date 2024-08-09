@@ -50,7 +50,7 @@
 
 <nav id="navbar" class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img id="logo" class="header__logo" src="images/ace-logo1.png" alt="site-logo"></a>
+    <a class="navbar-brand" href="index.php"><img id="logo" class="header__logo" src="images/ace-logo1.png" alt="site-logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span id="toggler" class="bi bi-list-nested"></span>
     </button>

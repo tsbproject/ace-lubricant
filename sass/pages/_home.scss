@@ -1,16 +1,20 @@
 .slider {
-    height: 35rem;
-    // width: 100% !important;
+    height: 35vh;
 
-    @include media-breakpoint-down(sm) {
-        height: 85vh;
-       
-    }
 
     @include media-breakpoint-down(lg) {
         height: 100vh;
        
     }
+    
+    
+    
+    @include media-breakpoint-down(sm) {
+        height: 85vh;
+       
+    }
+
+   
    
    
 }
@@ -18,26 +22,26 @@
 
 .section-about {
     // height: 12vh;
-    padding: 40rem 0;
-    margin-top: 30rem;
-    margin-bottom: 20rem;
-    // background-color: $color-primary-light;
+    padding: 23rem 0;
+    margin-top: 35rem;
+    margin-bottom: 2rem;
+   
     
     
     @include media-breakpoint-down(xl) {
-        height: 70vh;
-        padding: 30rem 0;
-        margin-top: 120rem;
-        margin-bottom: 7rem;
+        height: 80vh;
+        padding: 36rem 0;
+        margin-top: 35rem;
+        margin-bottom: 40rem;
     }
 
     
     
     @include media-breakpoint-down(lg) {
-        height: 60vh;
-        padding: 5rem 0;
-        margin-top: 36rem;
-        margin-bottom: 35rem;
+        height: 75vh;
+        padding: 2rem 0;
+        margin-top: 20rem;
+        margin-bottom: 50rem;
     }
 
 
@@ -45,15 +49,15 @@
         height: 140vh;
         padding: 5rem 0;
         margin-top: 16rem;
-        margin-bottom: 35rem;
+        margin-bottom: 15rem;
     }
     
     
     @include media-breakpoint-down(sm) {
         height: 280vh;
-        padding: 8rem 0;
-        margin-top: -12rem;
-        margin-bottom: -40rem;
+        padding: 8rem 1rem;
+        margin-top: -7rem;
+        margin-bottom: -50rem;
     }
 
     
@@ -83,8 +87,8 @@
     } //section-features > * {}
 
     @include media-breakpoint-down(xl) {
-        height: 60vh;
-        margin-top: 10rem;
+        height: 120vh;
+        margin-top: 6rem;
         margin-bottom: 10rem;
         background-color: $color-primary-light;
 
@@ -92,18 +96,28 @@
     
     
     @include media-breakpoint-down(lg) {
-        height: 140vh;
+        height: 250vh;
         margin-top: 10rem;
         margin-bottom: 10rem;
         background-color: $color-primary-light;
 
     }
+
+
+    @include media-breakpoint-down(md) {
+        height: 420vh;
+        margin-top: 10rem;
+        margin-bottom: 7rem;
+        background-color: $color-primary-light;
+
+    }
+   
    
     
     @include media-breakpoint-down(sm) {
-        height: 430vh;
+        height: 380vh;
         margin-top: 10rem;
-        margin-bottom: 10rem;
+        margin-bottom: 7rem;
         background-color: $color-primary-light;
 
     }
@@ -113,25 +127,30 @@
 
 
 .section-testimony {
-    position: relative;
     padding: 25rem 0;
     margin-top: -10rem;
 
+
+
+    @include media-breakpoint-down(lg) {
+        padding: 25rem 0;
+        margin-top: -20rem;
+
+    }
+        
+      
+    
+
    @include media-breakpoint-down(sm) {
-        height: 300vh;
-        position: relative;
-        padding: 15rem 0;
+        height: 280vh;
+        padding: 5rem 1rem;
         margin-top: 1.5rem;
         
       
     }
 
 
-    @include media-breakpoint-down(md) {
-        
-      
-    }
-
+   
 
 
     &__btn {
@@ -151,19 +170,7 @@
 
 }
 
-// .section-front-contact {
-//     padding: 15rem 0;
-//     background-image:linear-gradient(to right bottom, $color-primary-light, 
-//     $color-primary) ;
 
-//    @include media-breakpoint-down(sm) {
-//     background-image:linear-gradient(to right bottom, $color-primary-light, 
-//     $color-primary) ;
-//       padding: 10rem 0;
-//       margin-top: 10rem;
-      
-//    }
-// }
 
 
 
@@ -181,23 +188,57 @@
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
 
-    // height: 75rem;
+    height: 90rem;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(lg) {
         background-image:linear-gradient( 105deg, 
     rgba($color-primary-light, 10),
-    rgba($color-secondary-white, .1) 70%,
+    rgba($color-secondary-white, .1) 80%,
     
     transparent 70%), 
     
     url(../images/ace-contact.jpg);
-    background-size: auto; // or 100% value
-    background-position: 100%;
+    background-size: cover; // or 100% value
+    background-position: 25%;
     background-repeat: no-repeat;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
-        // height: 120vh;
-        // margin-top: 25rem;
+        
+        
+     }
+
+
+     @include media-breakpoint-down(md) {
+        background-image:linear-gradient( 105deg, 
+    rgba($color-primary-light, 10),
+    rgba($color-secondary-white, .1) 80%,
+    
+    transparent 70%), 
+    
+    url(../images/ace-contact.jpg);
+    background-size: cover; // or 100% value
+    background-position: 25%;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
+        
+        
+     }
+
+    @include media-breakpoint-down(sm) {
+        background-image:linear-gradient( 105deg, 
+    rgba($color-primary-light, 10),
+    rgba($color-secondary-white, .1) 80%,
+    
+    transparent 70%), 
+    
+    url(../images/ace-contact.jpg);
+    background-size: cover; // or 100% value
+    background-position: 25%;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
+        
         
      }
 
@@ -225,20 +266,102 @@
 
 
 
+.action-call {
+    height: 30rem;
+    padding: 15rem 0;
+    background-color: rgba($color-primary-deep, 0.8);
+    padding: 4rem;
 
-// .section-contact {
-//     padding: 15rem 0;
-//     background-image:linear-gradient(to right bottom, $color-primary-light, 
-//     $color-primary) ;
+    @include media-breakpoint-down(xl) {
+        height: 43rem;
+    }
 
-//    @include media-breakpoint-down(sm) {
-//     background-image:linear-gradient(to right bottom, $color-primary-light, 
-//     $color-primary) ;
-//       padding: 10rem 0;
-//       margin-top: 10rem;
-      
-//    }
-// }
+    @include media-breakpoint-down(lg) {
+        height: 89rem;
+    }
+
+
+    @include media-breakpoint-down(md) {
+        height: 75rem;
+    }
+     
+
+    @include media-breakpoint-down(sm) {
+        height: 65rem;
+    }
+
+    &__img {
+    
+        max-width: 53%;
+        margin-left: 15rem;
+        border: .7rem solid rgba($color-primary-light, 0.8);
+        border-radius: 2rem;
+
+        @include media-breakpoint-down(xl) {
+            max-width: 100%;
+            margin: auto;
+        }
+            
+
+        @include media-breakpoint-down(lg) {
+            max-width: 102%;
+            margin: auto;
+        }
+
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+            margin: auto;
+        }
+        
+        
+        
+    }
+
+    &__text {
+        font-size: 3rem;
+        color:$color-secondary-white;
+
+    }
+
+    &__btn {
+        font-size: 4rem;
+        background-color: rgba($color-primary-light, 0.8);
+        position: relative;
+        top: 5rem;
+        width: 50rem;
+
+        @include media-breakpoint-down(xl) {
+            width: 32rem;
+            margin-left: 10rem;
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-left: 6rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            width: 25rem;
+            margin-left: 3rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            width: 25rem;
+            margin-left: 3rem;
+        }
+
+    }
+
+    &__col1 {
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 5rem;
+        }
+    }
+
+    
+}
+
+
 
 
 

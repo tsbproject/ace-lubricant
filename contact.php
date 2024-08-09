@@ -142,21 +142,22 @@ session_start();
                     <div class="form__group">
                       <textarea class="form__textarea" placeholder="write your message here" id="message" name="message" rows="5" required></textarea>
                       <label for="message" class="form__label"> Your Message</label>
-                  </div>
-    
-    
+                   </div>
+
+                 
+                   
+                    
                   <div class="form-group" style="display: none;">
                 <label for="website">Website</label>
                 <input type="text" class="form-control" id="website" name="website">
                   </div>
-                 <div class="g-recaptcha" data-sitekey="6Le7qx0qAAAAANprlofGZX6dbwlVtvgh75TrRxa0"></div>
-                        
-                       
                 
+                        
+                                       
                     <div class="form__group ">
-                        <button class="btn btn--green form__submit ">Submit &rAarr;</button>
-                    </div>
-    
+                    <button class="form__submit g-recaptcha" data-sitekey="6LfwHx4qAAAAAD1YaFK2cyQBO_L2bjnYIgRQs-yk" data-callback="onSubmit">Submit &rAarr;</button>
+                    </div>    
+
                 </form>
 
                

@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 
-    $recaptchaSecret = '6Le7qx0qAAAAAEpPckcEw_F8QIqmfH0ek37Iz6Qg';
+    $recaptchaSecret = '6LfwHx4qAAAAAGdXZnXk85lULMonENovWKCBjlk4';
     $recaptchaResponse = $_POST['g-recaptcha-response'];
 
     // Verify the reCAPTCHA response

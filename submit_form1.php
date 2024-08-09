@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 
-    $recaptchaSecret = '6Le7qx0qAAAAAEpPckcEw_F8QIqmfH0ek37Iz6Qg';
+    $recaptchaSecret = '6LfwHx4qAAAAAGdXZnXk85lULMonENovWKCBjlk4';
     $recaptchaResponse = $_POST['g-recaptcha-response'];
 
     // Verify the reCAPTCHA response
@@ -58,16 +58,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($stmt) {
         $stmt->bind_param("ssss", $full_name, $email, $phone, $message);
         if ($stmt->execute()) {
-            $_SESSION['message'] = "";
-            $_SESSION['message_type'] = 'success';
+            $_SESSION['email_message'] = "";
+            $_SESSION['email_message_type'] = 'success';
         } else {
-            $_SESSION['message'] = "Error: " . $stmt->error;
-            $_SESSION['message_type'] = 'danger';
+            $_SESSION['email_message'] = "Error: " . $stmt->error;
+            $_SESSION['email_message_type'] = 'danger';
         }
         $stmt->close();
     } else {
-        $_SESSION['message'] = "Error: " . $mysqli->error;
-        $_SESSION['message_type'] = 'danger';
+        $_SESSION['email_message'] = "Error: " . $mysqli->error;
+        $_SESSION['email_message_type'] = 'danger';
     }
 
     $mysqli->close();

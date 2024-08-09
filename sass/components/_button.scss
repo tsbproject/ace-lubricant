@@ -52,9 +52,9 @@
         }
     }
 
-    &--orange {
+    &--green {
         background-color: $color-primary;
-        color: $color-primary-black;
+        color: $color-secondary-white;
         font-weight: 700;
 
         &::after {
@@ -111,22 +111,22 @@
 
 
 
-.section-form__submit {
-    width: 17rem;
-    height: 3rem;
-    margin-left: 10rem;
-    margin-bottom: 2rem;
-    background-color: $color-primary;
-    font-size: $default-font-size2;
-    color: $color-primary-black;
-    font-weight: 800;
-    border: none;
-    border-radius: 3rem;
+// .form__submit {
+//     width: 17rem;
+//     height: 3rem;
+//     margin-left: 10rem;
+//     margin-bottom: 2rem;
+//     background-color: $color-primary;
+//     font-size: $default-font-size2;
+//     color: $color-primary-black;
+//     font-weight: 800;
+//     border: none;
+//     border-radius: 3rem;
    
 
 
     
-}
+// }
 
 
 

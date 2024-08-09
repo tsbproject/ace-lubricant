@@ -4,8 +4,8 @@
       <img src="images/ace-logo1.png" alt="Footer logo" class="footer__logo">
   </div>
 
-  <div class="row">
-      <div class="col-md-6">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 ">
+      <div class="col">
           <div class="footer__navigation">
               <ul class="footer__list">
                 <li class="footer__item"><a href="about.php" class="footer__link">About us</a></li>

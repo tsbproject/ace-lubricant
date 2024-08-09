@@ -28,6 +28,11 @@
         padding: 3rem 14rem;
         transform: skewX(-5deg);
         margin-bottom: 10rem;
+
+        &:not(:last-child) {
+            margin-bottom: 10rem;
+
+        }
     }
    
     
@@ -40,28 +45,27 @@
     
     
     @include media-breakpoint-down(sm) {
-        max-width: 100%;
+        max-width: 90%;
+        height: auto;
         margin: 0 auto;
         box-shadow: 0 3rem 6rem rgba($color-primary-black, .1);
         background-color: rgba($color-primary-deep, .6);
-        padding: 5rem;
-        padding-left: 6rem;
+        padding: 3rem 0;
+        padding-left: 2rem;
         font-size: $default-font-size;
         transform: skewX(0deg);
-        margin-bottom: 10rem;
+        margin-bottom: 2rem;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
     }
 
 
     
    
 
-    &:not(:last-child) {
-        margin-bottom: 10rem;
-
-       
-
-    }
-
+   
     
 
    
@@ -77,6 +81,36 @@
         clip-path: circle(50% at 50% 50%) ;
         transform: translateX(-2rem) skewX(12deg);
         position: relative;
+
+
+        @include media-breakpoint-down(xl) {
+            width: 10rem;
+            height: 10rem;
+            background-color: orangered;
+            float: left;
+            -webkit-shape-outside:circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%) ;
+            transform: translateX(-2rem) skewX(4deg);
+            position: relative;
+        }
+       
+
+
+        @include media-breakpoint-down(lg) {
+            width: 10rem;
+            height: 10rem;
+            background-color: orangered;
+            float: left;
+            -webkit-shape-outside:circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%) ;
+            transform: translateX(-2rem) skewX(4deg);
+            position: relative;
+        }
+       
 
         @include media-breakpoint-down(sm) {
             width: 10rem;
@@ -106,7 +140,26 @@
 
 
     &__text {
-        transform: skewX(0deg);
+        transform: skewX(12deg);
+
+        @include media-breakpoint-down(lg) {
+            font-size: .5rem;
+            transform: skewX(12deg);
+
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: .5rem;
+            transform: skewX(-4deg);
+
+        }
+    }
+
+    &__word {
+
+        @include media-breakpoint-down(sm) {
+            font-size: 10px;
+        }
     }
 
 

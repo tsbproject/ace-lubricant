@@ -118,6 +118,7 @@ body {
 
 .section-about {
 
+
    
 
     &__photo {
@@ -129,6 +130,15 @@ body {
         animation: fadeInDown  2s ease-out;
    
     
+        @include media-breakpoint-down(xl) {
+            max-width:100%;
+            margin-top:10rem;
+            
+        }
+        
+        
+        
+        
         @include media-breakpoint-down(lg) {
             max-width:110%;
             margin-top:20rem;
@@ -273,17 +283,30 @@ body {
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
 
-    // height: 75rem;
+    @include media-breakpoint-down(lg) {
+        background-size: cover; // or 100% value
+        background-position: 25%;
+        background-repeat: no-repeat;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
+           
+            
+         }
+    
 
     @include media-breakpoint-down(sm) {
-        // height: 120vh;
-        // margin-top: 25rem;
+    background-size: cover; // or 100% value
+    background-position: 25%;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
+       
         
      }
 
     &__form {
         max-width: 80%;
-        // padding: 6rem;
+      
 
         @include media-breakpoint-down(sm) {
             max-width: 100%;

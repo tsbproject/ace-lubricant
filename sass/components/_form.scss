@@ -177,31 +177,86 @@
         transform: translateY(-4rem);
     }
 
+    &__f-submit {
+        position: relative;
+        top: -3rem;
+        right: -13rem;
+      
 
- &__submit {
-    margin-top: 38rem;
-
-    @include media-breakpoint-down(sm) {
-       
-    
-           
-        }
-           
- }
-
-    
- @include media-breakpoint-down(sm) {
-    &__group:not(:last-child) {
-        margin-bottom: 1rem;
-
-       
     }
-            
- }
+
+
+    &__submit {
+        font-size: 2rem;
+        background-color: $color-primary;
+        color: $color-secondary-white;
+        font-weight: 700;
+        border-radius: .7rem;
+
+        &::after {
+            background-color: $color-primary;
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 10rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
+
+
+        position: relative;
+        top: -2rem;
+        left: 10rem;
+        
+
+        @include media-breakpoint-down(xl) {
+            position: absolute;
+            top: 141rem;
+           
+                    
+        }
+       
+       
+        @include media-breakpoint-down(lg) {
+            position: absolute;
+            top: 140rem;
+           
+           
+                    
+        }
+        
+        @include media-breakpoint-down(md) {
+            position: absolute;
+            top: 142rem;
+            left:2rem;
+          
+                    
+        }
+          
+    @include media-breakpoint-down(sm) {
+        position: absolute;
+        top: 163rem;
+        left:2rem;
+       
+
+       
+                
+    }
 
     
 
-}
+   
+
+        
+
+    }
 
 
 .success.mg {
@@ -214,20 +269,9 @@
 
 
 
-.g-recaptcha {
-    margin-bottom: 10rem;
-    height: 3rem;
 
-    
-}
 
-// iframe {
-  
-//     @include media-breakpoint-down(sm) {
-//         width: 240px;
-//         // height: px;
-//     }
-// }
 
 
    
+}

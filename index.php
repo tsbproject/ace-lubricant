@@ -57,7 +57,7 @@ session_start();
                         <div class="carousel-caption d-md-block">
                             <h1 class="carousel-caption__header">ACE LUBRICANTS</h1>
                             <p class="carousel-caption__description">high-quality vehicles and industrial <br>lubricants in Africa.</p>
-                            <a class="carousel-caption__btn btn btn--orange" href="about.html">Learn More</a>
+                            <a class="carousel-caption__btn btn btn--green" href="about.php">Learn More</a>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
@@ -65,7 +65,7 @@ session_start();
                         <div class="carousel-caption d-md-block">
                             <h1 class="carousel-caption__header">ACE LUBRICANTS</h1>
                             <p class="carousel-caption__description">superior products that meet the evolving<br> needs of our customers.</p>
-                            <a class="carousel-caption__btn btn btn--orange" href="about.html">Learn More</a>
+                            <a class="carousel-caption__btn btn btn--green" href="about.php">Learn More</a>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -73,7 +73,7 @@ session_start();
                         <div class="carousel-caption d-md-block">
                             <h1 class="carousel-caption__header">ACE LUBRICANTS</h1>
                             <p class="carousel-caption__description">provide superior lubrication and protection<br> in various applications.</p>
-                            <a class="carousel-caption__btn btn btn--orange" href="about.html">Learn More</a>
+                            <a class="carousel-caption__btn btn btn--green" href="about.php">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -156,9 +156,9 @@ session_start();
          
           <div class="col">
             <div class="feature-box">
-              <img src="images/product4.png" alt="feature-box-image" class="feature-box__products">
-               <h3 class="feature-box__heading">SUPER HD sae 50 25L</h3>
-               <p class="feature-box__text">an alloyed mineral oil based monograde motor oil</p>
+              <img src="images/product9.png" alt="feature-box-image" class="feature-box__products">
+               <h3 class="feature-box__heading">VULCAN 15w 40 25L</h3>
+               <p class="feature-box__text">high performance long drain diesel engine oil</p>
              </div> 
           </div>
  
@@ -195,7 +195,7 @@ session_start();
            <div class="testimony_text">
              <h3 class="heading-tertiary u-margin-bottom-small">
               Since switching to Ace Lubricants</h3>
-                <p>
+                <p class="testimony_word">
                   As the Fleet Manager for Reliable Logistics Ltd.,
                    maintaining the performance and longevity of our 
                    vehicles is paramount. Since switching to Ace Lubricants,
@@ -223,7 +223,7 @@ session_start();
            <div class="testimony_text">
              <h3 class="heading-tertiary u-margin-bottom-small">
               specialty lubricants and hydraulic fluids</h3>
-                <p>
+                <p class="testimony_word">
                   At GreenTech Manufacturing, we rely heavily on the performance of 
                   our industrial machinery to meet production targets. Using Ace Lubricants'
                    specialty lubricants and hydraulic fluids has made a world of difference
@@ -234,78 +234,31 @@ session_start();
                       and reduced wear and tear on our machines. I highly recommend 
                       Ace Lubricants to anyone looking for top-notch industrial lubricants.  
                 </p>
-                <!-- <a href="testimonies.html" class="btn btn-text  section-testimony__btn ">Read All stories &rarr;</a> -->
+                
            </div>
         </div>
       </div>
   </div>
 </section>
 
-<section class="section-front-contact">
+<section class="action-call">
   <div class="container-fluid">
-    <div class="row">
-      <div class="front-contact">
-        <div class="front-contact__form">
-            <form method="post" action="submit_form1.php" class="form">
-                <div class="u-margin-bottom-medium">
-                    <h2 class="heading-secondary">
-                        Do you have any question about our products?
-                    </h2>
-                </div>
-            <?php if (isset($_SESSION['email_message'])): ?>
-                  <div id="success-message" class=" success-msg alert alert-<?php echo $_SESSION['email_message_type']; ?> mt-3">
-                      <?php 
-                      echo $_SESSION['email_message']; 
-                      unset($_SESSION['email_message']);
-                      unset($_SESSION['email_message_type']);
-                      ?>
-                  </div>
-              <?php endif; ?>
-                
-                <div class="form__group">
-                    <input type="text" class="form__input" placeholder="Full name" id="full_name" name="full_name" required>
-                    <label for="full_name" class="form__label"> Full Name</label>
-                </div>
-
-
-                <div class="form__group">
-                    <input type="email" class="form__input" placeholder="Email" id="email" name="email" required>
-                    <label for="email" class="form__label"> Email Address</label>
-                </div>
-
-
-                
-                <div class="form__group">
-                  <input type="phone" class="form__input" placeholder="Phone" id="phone" name="phone" required>
-                  <label for="phone" class="form__label"> Telephone</label>
-                </div>
-
-                <div class="form__group">
-                  <textarea class="form__textarea" placeholder="write your message here" id="message" name="message" rows="5" required></textarea>
-                  <label for="message" class="form__label"> Your Message</label>
-
-                 
-              </div>
-
-              <div class="form-group" style="display: none;">
-                <label for="website">Website</label>
-                <input type="text" class="form-control" id="website" name="website">
-            </div>
-            
-               <div class="g-recaptcha" data-sitekey="6Le7qx0qAAAAANprlofGZX6dbwlVtvgh75TrRxa0"></div>
-
-                    
-                   
-            
-                <div class="form__group ">
-                    <button class="btn btn--green form__submit ">Submit &rAarr;</button>
-                </div>
-
-            </form>
-
+    <div class="row row-cols-1 row-cols-sm-1 row-row-cols-md-2 row-cols-lg-2 row-cols-xl-2  ">
+      
+        <div class="col">
+        <div class="action-call__col1">
+          <img src="images/ace-contact.jpg" alt="Ace contact" class="action-call__img">
+        </div>
+        </div>
+      
+        <div class="col">
+          <div class="action-call__col2">
+            <p class="action-call__text paragraph">Do you have any question about our products?</p>
+            <a class="btn btn--white action-call__btn" href="contact.php">contact us</a>
+          </div>
         </div>
 
-      </div>
+   
     </div>
 
   </div>
