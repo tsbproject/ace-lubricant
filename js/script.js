@@ -1,3 +1,26 @@
+function onSubmit(token) {
+    document.getElementById("contactForm").submit();
+}
+
+
+
+async function submitForm() {
+    try {
+        let response = await fetch('submit_form.php', {
+            method: 'POST',
+            body: formData
+        });
+        let data = await response.json();
+        console.log('Success:', data);
+    } catch (error) {
+        console.error('Error:', error); // Catching the error
+    }
+}
+submitForm();
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.getElementById('navbar');

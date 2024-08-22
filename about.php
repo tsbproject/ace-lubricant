@@ -9,8 +9,7 @@
 
     
     <!--------------------Bootstrap CSS---------------------->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+   
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!----------------------------------Custom CSS------------------------------->
@@ -54,8 +53,8 @@
 
     <section class="vision-mission">
        <div class="container'fluid p-5 justify-content-evenly">
-         <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 ">
-           <div class="col gy-5 p-4">
+         <div class=" row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2  row-cols-xl-2 ">
+           <div class="col g-5 p-4">
             <div class="vision u-margin-top-small">
               <h2 class="vision__heading heading-secondary">Vision</h2>
               <p class="vision__text paragraph justify-content-evenly">To be the foremost provider of 
@@ -65,7 +64,7 @@
            </div>
 
 
-           <div class="col gy-5 p-4">
+           <div class="col g-5 p-4">
             <div class="vision u-margin-bottom-small justify-content-center">
               <h2 class="vision__heading heading-secondary ">Mission</h2>
               <p class="vision__text  paragraph justify-content-evenly">To deliver superior products that meet the evolving 
@@ -98,7 +97,7 @@
 
     <section class="company-profile">
       <div class="container'fluid p-5 justify-content-evenly">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
           <div class="col gy-5 p-4">
            <div class="profile">
             
@@ -131,7 +130,7 @@
           </div>
 
 
-          <div class="col-sm-6 gy-5 p-4">
+          <div class="col g-5 p-4">
            <div class="profile u-margin-top-small justify-content-center">
              <img src="images/ace4.jpg" alt="profile image" class="profile__img">
            </div>
@@ -148,8 +147,8 @@
 
    <section class="company-products">
     <div class="container'fluid p-5 justify-content-evenly">
-      <div class="row">
-        <div class="col-sm-7 gy-5 p-4">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2">
+        <div class="col g-5 p-4">
          <div class="profile">
 
           <h3 class="heading-tertiary profile__heading"> Ace Lubricants and Products Portfolio</h3>
@@ -202,7 +201,7 @@
         </div>
 
 
-        <div class="col-sm-5 gy-5 p-4">
+        <div class="col g-5 p-4">
           <div class="profile u-margin-top-small justify-content-center">
             <img src="images/ace5.jpg" alt="profile image" class="profile__img">
           </div>
@@ -217,6 +216,28 @@
 
 
  </section>
+
+ <section class="action-call">
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-sm-1 row-row-cols-md-2 row-cols-lg-2 row-cols-xl-2  ">
+      
+        <div class="col">
+        <div class="action-call__col1">
+          <img src="images/ace-contact.jpg" alt="Ace contact" class="action-call__img">
+        </div>
+        </div>
+      
+        <div class="col">
+          <div class="action-call__col2">
+            <p class="action-call__text paragraph">Do you have any question about our products?</p>
+            <a class="btn btn--white action-call__btn" href="contact.php">contact us</a>
+          </div>
+        </div>
+
+   
+    </div>
+
+  </div>
     
 
   
@@ -227,7 +248,7 @@
  
 
 
- Scroll Up Button -->
+ <!--Scroll Up Button -->
 <button id="scrollUpBtn" class="btn btn-primary">
   <i class="bi bi-arrow-up"></i> <!-- Bootstrap Icons -->
 </button>

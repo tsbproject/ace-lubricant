@@ -1,23 +1,18 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ace Lubricants</title>
+    <title>Ace Lubricants: Nigeria"s foremost high quality vehicles and industrial lubricants manufacturer</title>
     <meta name="description" content="high-quality vehicles and industrial lubricants manufacturer in Nigeria">
     <link rel="icon" type="image/x-icon" href="/images/ace-favicon.png">
 
     
     <!--------------------Bootstrap CSS---------------------->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
 
     <!----------------------------------Custom CSS------------------------------->
      <link rel="stylesheet" href="css/icon-font.css"> 
@@ -94,8 +89,8 @@ session_start();
       <div class="container"> 
         <h2 class="section-about__heading">ABOUT ACE LUBRICANTS</h2>
         
-        <div class="row g-5">
-          <div class="col-sm-6">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 g-5">
+          <div class="col">
             <p class="section-about__paragraph">Ace Lubricants is the flagship brand of Crescent Integrated and 
               General Merchandise Limited, prominent Nigerian company known for its high-quality vehicles and
                industrial lubricants. The Ace Lubricants line is a testament to the company's commitment to
@@ -114,9 +109,9 @@ session_start();
 
                     <a href="about.php" class="btn-text">Learn more &rarr;</a>
           </div>
-          <div class="col-sm-6"> 
-            <div class="composition">
-              <img src="images/ace-md.jpg" alt="ace-md-photo" class="section-about__photo  ">
+          <div class="col"> 
+            <div class="section-about__col">
+              <img src="images/ace-md.jpg" alt="ace-md-photo" class="section-about__photo">
               
             
           </div>
@@ -186,7 +181,7 @@ session_start();
         </h2>
     </div>
 
-    <div class="row">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1">
         <div class="testimony">
           <figure class="testimony__shape">
             <img src="images/ace-testimonial1.jpg" alt="person on a tour" class="testimony__image">

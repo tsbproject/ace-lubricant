@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
 
     // Database connection
-    $mysqli = new mysqli("localhost", "root", "", "acelubricant_db");
+    $mysqli = new mysqli("localhost", "root", "", "");
 
     if ($mysqli->connect_error) {
         $_SESSION['email_message'] = "Connection failed: " . $mysqli->connect_error;

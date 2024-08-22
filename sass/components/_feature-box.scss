@@ -10,7 +10,7 @@
     animation: fadeInDown  2s ease-out;
 
     @include media-breakpoint-down(xl) {
-        height: 80vh;
+        height: 40vh;
         padding: 5rem;
         margin-bottom: 2rem;
         &:not(:last-child) {
@@ -24,7 +24,7 @@
 
 
     @include media-breakpoint-down(lg) {
-        height: 85vh;
+        height: 50vh;
         padding: 5rem;
         margin-bottom: 2rem;
         &:not(:last-child) {
@@ -34,6 +34,26 @@
     
         
     }
+
+
+    
+    @include media-breakpoint-down(md) {
+        max-width: 100%;
+        height: 60vh;
+        margin-bottom: 2rem;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+
+        }
+
+        
+      
+        
+    
+        
+    }
+
 
     @include media-breakpoint-down(sm) {
         max-width: 100%;
@@ -59,7 +79,7 @@
 
         
         @include media-breakpoint-down(xl) {
-            max-width: 100%;
+            max-width: 110%;
             height:auto;
         }
         

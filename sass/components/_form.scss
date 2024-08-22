@@ -193,6 +193,10 @@
         font-weight: 700;
         border-radius: .7rem;
 
+        position: relative;
+        top: -2rem;
+        left: 10rem;
+
         &::after {
             background-color: $color-primary;
         }
@@ -211,9 +215,7 @@
         }
 
 
-        position: relative;
-        top: -2rem;
-        left: 10rem;
+       
         
 
         @include media-breakpoint-down(xl) {
@@ -242,7 +244,7 @@
           
     @include media-breakpoint-down(sm) {
         position: absolute;
-        top: 163rem;
+        top: 172rem;
         left:2rem;
        
 

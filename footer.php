@@ -17,7 +17,7 @@
           </div>
 
       </div>
-      <div class="col-md-6">
+      <div class="col">
           <p class="footer__copyright">
             Copyright &copy; 2024.  Crescent Integrated Limited. &nbsp; All right Reserved. <br>Built  by &nbsp; <a href="https://marvelcmedia.com" class="footer__link">marvel creative media.&nbsp; &nbsp;</a>
           </p>

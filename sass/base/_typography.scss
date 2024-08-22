@@ -132,7 +132,7 @@ body {
     
         @include media-breakpoint-down(xl) {
             max-width:100%;
-            margin-top:10rem;
+            margin-top:20rem;
             
         }
         
@@ -140,10 +140,30 @@ body {
         
         
         @include media-breakpoint-down(lg) {
-            max-width:110%;
-            margin-top:20rem;
+            max-width:100%;
+            margin-top:0rem;
+            margin-bottom:0rem;
+
             
         }
+
+
+
+        @include media-breakpoint-down(md) {
+            max-width: 110%;
+            height: auto;
+            border: solid;
+            border-radius: 2rem;
+            border-width: .2rem;
+            border-color: $color-primary-light;
+            outline: 2rem;
+            
+
+            position: relative;
+            top: -20rem;
+            
+        }
+    
         
         @include media-breakpoint-down(sm) {
             max-width: 100%;
@@ -153,6 +173,27 @@ body {
             border-width: .2rem;
             border-color: $color-primary-light;
             outline: 2rem;
+            
+
+            position: relative;
+            top: -1rem;
+            
+        }
+
+
+        @include media-breakpoint-down(xm) {
+            max-width: 100%;
+            height: auto;
+            border: solid;
+            border-radius: 2rem;
+            border-width: .2rem;
+            border-color: $color-primary-light;
+            outline: 2rem;
+            
+
+            position: relative;
+            top: 10rem;
+            
         }
     
        
@@ -215,7 +256,7 @@ body {
     background-color: $color-primary-light;
 
     @include media-breakpoint-down(sm) {
-        height:70rem;
+        height:85rem;
     } 
     
 }

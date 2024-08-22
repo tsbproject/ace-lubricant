@@ -13,11 +13,10 @@ session_start();
 
     
     <!--------------------Bootstrap CSS---------------------->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+       <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        
+       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <!----------------------------------Custom CSS------------------------------->
      <link rel="stylesheet" href="css/icon-font.css"> 
@@ -112,16 +111,18 @@ session_start();
                     </div>
 
                     <?php if (isset($_SESSION['email_message'])): ?>
-                    <div id="success-message" class=" success-msg alert alert-<?php echo $_SESSION['email_message_type']; ?> mt-3">
-                        <?php 
-                        echo $_SESSION['email_message']; 
-                        unset($_SESSION['email_message']);
-                        unset($_SESSION['email_message_type']);
-                        ?>
-                    </div>
-                <?php endif; ?>
+                   <div class="alert alert-<?php echo $_SESSION['email_message_type']; ?> mt-3">
+                   <?php 
+                echo $_SESSION['email_message']; 
+                unset($_SESSION['email_message']);
+                unset($_SESSION['email_message_type']);
+                ?>
+            </div>
+        <?php endif; ?>
+    </div>
 
-                <script type="text/javascript">
+    <!-- JavaScript to handle the reCAPTCHA callback -->
+    <script type="text/javascript">
         function onSubmit(token) {
             document.getElementById("contactForm").submit();
         }
